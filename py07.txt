@@ -1,0 +1,43 @@
+1. The feature responsible for generating Regex objects is the `re.compile()` function in Python's `re` module.
+
+2. Raw strings often appear in Regex objects because they prevent Python's string literal processing mechanisms from interpreting backslashes as escape characters. This is useful in regular expressions, where backslashes are commonly used.
+
+3. The return value of the `search()` method is a Match object if a match is found, and `None` otherwise.
+
+4. You can get the actual strings that match the pattern from a Match object using the `group()` method.
+
+5. In the regex `r'(\d\d\d)-(\d\d\d-\d\d\d\d)'`, group 0 covers the entire match, group 1 covers the first set of parentheses, and group 2 covers the second set of parentheses.
+
+6. To specify that you want actual parentheses and periods in a regex, you need to escape them using a backslash, like this: `\(` for parentheses and `\.` for periods.
+
+7. The `findall()` method returns a list of string tuples when the regex contains more than one capturing group, and it returns a string list otherwise.
+
+8. In standard expressions, the `|` character means "or" and is used to specify alternatives.
+
+9. In regular expressions, the `.` character stands for any single character except newline.
+
+10. In regular expressions, the `+` character matches one or more occurrences of the preceding element, whereas the `*` character matches zero or more occurrences of the preceding element.
+
+11. `{4}` in a regular expression matches exactly four occurrences of the preceding element, while `{4,5}` matches between four and five occurrences of the preceding element.
+
+12. In regular expressions, `\d` matches any digit, `\w` matches any alphanumeric character including underscore, and `\s` matches any whitespace character.
+
+13. In regular expressions, `\D` matches any non-digit character, `\W` matches any non-alphanumeric character excluding underscore, and `\S` matches any non-whitespace character.
+
+14. `.*?` matches any character (except for line terminators) as few times as possible, while `.*` matches any character (except for line terminators) as many times as possible.
+
+15. The syntax for matching both numbers and lowercase letters with a character class is `[0-9a-z]`.
+
+16. To make a normal expression in regex case insensitive, you can pass the `re.IGNORECASE` or `re.I` flag as the second argument to `re.compile()`.
+
+17. The `.` character normally matches any character except a newline. If `re.DOTALL` is passed as the second argument in `re.compile()`, the `.` character will also match newline characters.
+
+18. `numRegex.sub('X', '11 drummers, 10 pipers, five rings, 4 hen')` will return `'X drummers, X pipers, five rings, X hen'`.
+
+19. Passing `re.VERBOSE` as the second argument to `re.compile()` allows you to add whitespace and comments to the regex string to make it more readable.
+
+20. You can write a regex that matches a number with commas for every three digits using the pattern `r'\d{1,3}(,\d{3})*'`.
+
+21. You can write a regex that matches the full name of someone whose last name is Watanabe using the pattern `r'[A-Z][a-z]*\sWatanabe'`.
+
+22. You can write a regex that matches the specified sentence using the pattern `r'(Alice|Bob|Carol)\s(eats|pets|throws)\s(apples|cats|baseballs)\.'`.

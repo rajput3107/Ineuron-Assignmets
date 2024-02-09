@@ -1,0 +1,115 @@
+
+
+### Question 1:
+Define a class with a generator which can iterate the numbers, which are divisible by 7, between a given range 0 and n.
+
+class DivisibleBySeven:
+    def __init__(self, n):
+        self.n = n
+
+    def generate_divisible_by_seven(self):
+        for i in range(self.n):
+            if i % 7 == 0:
+                yield i
+
+# Example usage:
+n = 50
+divisible_gen = DivisibleBySeven(n)
+for num in divisible_gen.generate_divisible_by_seven():
+    print(num)
+
+
+### Question 2:
+Write a program to compute the frequency of the words from the input and output after sorting the keys alphanumerically.
+
+input_string = input("Enter a string: ")
+
+word_list = input_string.split()
+word_count = {}
+
+for word in word_list:
+    word_count[word] = word_count.get(word, 0) + 1
+
+for word in sorted(word_count):
+    print(f"{word}:{word_count[word]}")
+
+### Question 3:
+Define a class `Person` and its two child classes: `Male` and `Female`. All classes have a method `getGender` which can print "Male" for `Male` class and "Female" for `Female` class.
+
+class Person:
+    def getGender(self):
+        return "Unknown"
+
+class Male(Person):
+    def getGender(self):
+        return "Male"
+
+class Female(Person):
+    def getGender(self):
+        return "Female"
+
+# Example usage:
+male_person = Male()
+female_person = Female()
+
+print(male_person.getGender())   # Output: Male
+print(female_person.getGender()) # Output: Female
+
+### Question 4:
+Please write a program to generate all sentences where the subject is in ["I", "You"] and verb is in ["Play", "Love"] and the object is in ["Hockey", "Football"].
+
+subjects = ["I", "You"]
+verbs = ["Play", "Love"]
+objects = ["Hockey", "Football"]
+
+for subject in subjects:
+    for verb in verbs:
+        for obj in objects:
+            print(f"{subject} {verb} {obj}")
+
+### Question 5:
+Please write a program to compress and decompress the string "hello world!hello world!hello world!hello world!".
+
+import zlib
+
+# String to be compressed
+string_to_compress = "hello world!hello world!hello world!hello world!"
+
+# Compressing the string
+compressed_data = zlib.compress(bytes(string_to_compress, 'utf-8'))
+
+# Decompressing the string
+decompressed_data = zlib.decompress(compressed_data)
+
+print("Original String:", string_to_compress)
+print("Compressed String:", compressed_data)
+print("Decompressed String:", decompressed_data.decode('utf-8'))
+
+### Question 6:
+Please write a binary search function which searches an item in a sorted list. The function should return the index of the element to be searched in the list.
+
+def binary_search(arr, x):
+    low = 0
+    high = len(arr) - 1
+    mid = 0
+
+    while low <= high:
+        mid = (high + low) // 2
+        if arr[mid] < x:
+            low = mid + 1
+        elif arr[mid] > x:
+            high = mid - 1
+        else:
+            return mid
+    return -1
+
+# Example usage:
+arr = [2, 3, 4, 10, 40]
+x = 10
+
+result = binary_search(arr, x)
+
+if result != -1:
+    print(f"Element is present at index {result}")
+else:
+    print("Element is not present in array")

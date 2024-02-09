@@ -1,0 +1,36 @@
+1. **Relationship between `def` statements and `lambda` expressions:**
+   - Both `def` statements and `lambda` expressions are used to create functions in Python.
+   - `def` is a statement used for creating named functions with a block of code, allowing for complex functionality and multiple statements.
+   - `lambda` is an anonymous function, often used for simple operations and functions that can be expressed in a single line.
+
+2. **Benefits of `lambda`:**
+   - Conciseness: Lambdas allow you to write functions in a more compact form, particularly when the functionality is simple.
+   - Readability: Lambdas can make code more readable when used appropriately, especially for small, one-off operations.
+   - Functional programming: Lambdas are commonly used in functional programming paradigms where functions are treated as first-class citizens.
+
+3. **Comparison of `map`, `filter`, and `reduce`:**
+   - `map`: Applies a function to all the items in an input list and returns a new list containing the results.
+   - `filter`: Filters out elements from a sequence based on a condition, returning a new sequence.
+   - `reduce`: Applies a rolling computation to sequential pairs of values in a list, reducing them to a single value.
+
+4. **Function annotations:**
+   - Function annotations are a way to attach metadata to the parameters and return value of functions.
+   - They are expressed as expressions written after the parameter list and a colon, before the function body.
+   - They can be used to indicate the expected types of parameters and return values, although Python itself does not enforce these annotations.
+
+5. **Recursive functions:**
+   - Recursive functions are functions that call themselves during their execution.
+   - They are used to solve problems that can be broken down into smaller, similar subproblems.
+   - Recursion can provide an elegant solution for problems like tree traversal, factorial calculation, and Fibonacci sequence generation.
+
+6. **General design guidelines for coding functions:**
+   - Follow the single responsibility principle: Functions should have a clear, single purpose.
+   - Use meaningful names: Function names should be descriptive and indicative of their purpose.
+   - Keep functions small and focused: Functions should ideally do one thing and do it well, avoiding excessive complexity.
+   - Write documentation: Document your functions using docstrings to explain their purpose, parameters, and return values.
+   - Avoid side effects: Functions should ideally not modify global variables or have unexpected side effects.
+
+7. **Ways functions can communicate results to a caller:**
+   - Return values: Functions can return one or more values using the `return` statement.
+   - Modifying mutable objects: Functions can modify mutable objects passed to them as arguments, affecting the caller's state.
+   - Global variables: Functions can access and modify global variables to communicate results, although this is generally discouraged due to potential side effects.

@@ -1,0 +1,80 @@
+
+1. Convert kilometers to miles:
+
+# Function to convert kilometers to miles
+def km_to_miles(km):
+    miles = km * 0.621371
+    return miles
+
+# Input from the user
+kilometers = float(input("Enter distance in kilometers: "))
+
+# Convert kilometers to miles
+miles = km_to_miles(kilometers)
+
+# Display the result
+print(f"{kilometers} kilometers is equal to {miles} miles.")
+
+
+2. Convert Celsius to Fahrenheit:
+
+# Function to convert Celsius to Fahrenheit
+def celsius_to_fahrenheit(celsius):
+    fahrenheit = (celsius * 9/5) + 32
+    return fahrenheit
+
+# Input from the user
+celsius = float(input("Enter temperature in Celsius: "))
+
+# Convert Celsius to Fahrenheit
+fahrenheit = celsius_to_fahrenheit(celsius)
+
+# Display the result
+print(f"{celsius} degrees Celsius is equal to {fahrenheit} degrees Fahrenheit.")
+```
+
+3. Display calendar:
+
+import calendar
+
+# Input year and month from the user
+year = int(input("Enter year: "))
+month = int(input("Enter month: "))
+
+# Display the calendar
+print(calendar.month(year, month))
+
+4. Solve quadratic equation:
+
+import cmath
+
+# Input coefficients from the user
+a = float(input("Enter coefficient a: "))
+b = float(input("Enter coefficient b: "))
+c = float(input("Enter coefficient c: "))
+
+# Calculate the discriminant
+d = (b**2) - (4*a*c)
+
+# Find two solutions
+solution1 = (-b - cmath.sqrt(d)) / (2 * a)
+solution2 = (-b + cmath.sqrt(d)) / (2 * a)
+
+# Display the solutions
+print(f"Solutions are: {solution1} and {solution2}")
+
+5. Swap two variables without a temporary variable:
+
+# Input two variables from the user
+x = input("Enter value of x: ")
+y = input("Enter value of y: ")
+
+# Display the values before swapping
+print(f"Before swapping: x = {x}, y = {y}")
+
+# Swap the variables without a temporary variable
+x, y = y, x
+
+# Display the values after swapping
+print(f"After swapping: x = {x}, y = {y}")
+

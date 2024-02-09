@@ -1,0 +1,50 @@
+
+### Question 1:
+def divisible_by_5_and_7(n):
+    for i in range(n+1):
+        if i % 5 == 0 and i % 7 == 0:
+            yield i
+
+n = int(input("Enter a number: "))
+result = ','.join(map(str, divisible_by_5_and_7(n)))
+print(result)
+
+
+### Question 2:
+def even_numbers(n):
+    for i in range(n+1):
+        if i % 2 == 0:
+            yield i
+
+n = int(input("Enter a number: "))
+result = ','.join(map(str, even_numbers(n)))
+print(result)
+
+### Question 3:
+n = int(input("Enter a number: "))
+fibonacci = [0, 1]
+[fibonacci.append(fibonacci[-1] + fibonacci[-2]) for _ in range(2, n)]
+print(','.join(map(str, fibonacci[:n])))
+
+### Question 4:
+email = input("Enter an email address: ")
+username = email.split('@')[0]
+print(username)
+
+### Question 5:
+class Shape:
+    def area(self):
+        return 0
+
+class Square(Shape):
+    def __init__(self, length):
+        self.length = length
+
+    def area(self):
+        return self.length ** 2
+
+# Example usage:
+square = Square(5)
+print("Area of the square:", square.area())
+
+

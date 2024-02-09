@@ -1,0 +1,56 @@
+
+
+1. Python program to print "Hello Python":
+
+
+print("Hello Python")
+
+2. Python program to perform addition and division:
+
+# Addition
+num1 = 10
+num2 = 5
+sum = num1 + num2
+print("Sum:", sum)
+
+# Division
+numerator = 10
+denominator = 2
+result = numerator / denominator
+print("Division Result:", result)
+
+3. Python program to find the area of a triangle:
+
+# Given base and height of the triangle
+base = 10
+height = 5
+
+# Area of the triangle formula: 0.5 * base * height
+area = 0.5 * base * height
+
+print("Area of the triangle:", area)
+
+
+4. Python program to swap two variables:
+
+# Initial values
+a = 5
+b = 10
+
+# Swapping using a temporary variable
+temp = a
+a = b
+b = temp
+
+print("After swapping:")
+print("a =", a)
+print("b =", b)
+
+5. Python program to generate a random number:
+
+import random
+
+# Generate a random number between 1 and 100
+random_number = random.randint(1, 100)
+print("Random number:", random_number)
+

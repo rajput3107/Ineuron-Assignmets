@@ -1,0 +1,50 @@
+ans 1: All of them
+ans 2: 
+String: A string is a data type used to represent text in programming. It consists of a sequence of characters, such as letters, digits, and special symbols. In many programming languages, strings are typically enclosed within quotation marks . For example, "Hello, World!" and '123abc' are both strings.
+
+Variable: A variable is a symbolic name that represents a storage location in a computer's memory where data can be stored, including strings. Variables are used to store and manipulate data in a program. They provide a way to refer to values that can change during the execution of the program. Variables can hold different types of data, including strings, numbers, and more complex data structures.
+
+ans3:
+Integer (int):
+
+Integers represent whole numbers without any decimal point. They can be positive or negative.
+Example: 5, -10, 1000, 0.
+Float (float):
+
+Floats represent numbers that have a decimal point. They can also be positive or negative.
+Example: 3.14, 2.71828, -0.5, 6.0.
+String (str):
+
+Strings represent sequences of characters, which can include letters, numbers, symbols, and spaces. They are enclosed within single quotes (') or double quotes (").
+Example: 'hello', "Python", '12345'.
+
+ans4 : An expression in programming is made up of one or more operands and operators, which are symbols that represent computations or actions to be performed. Expressions can include variables, constants, function calls, and operators.
+
+ans5: 
+Expression:
+
+An expression is a combination of values, variables, operators, and function calls that evaluates to a single value.
+Expressions can be simple, like 5 + 3, or more complex, involving function calls and nested operations, like math.sqrt(x ** 2 + y ** 2).
+
+Statement:
+
+A statement is a unit of code that performs some action or makes something happen within a program.
+Statements often contain expressions, but they can also include declarations, assignments, loops, conditionals, function definitions, etc.
+
+ans6:
+The variable bacon still contains the value 22.
+
+ans7:
+the values of the following two terms be same "spamspamspam".
+
+ans8:
+eggs is a valid variable name because it starts with a letter and only contains letters.
+100 is invalid because it starts with a digit. Variable names cannot start with a digit in Python.
+
+ans9:
+int(), float(), str()
+
+ans10:
+The expression 'I have eaten ' + 99 + ' burritos.' causes an error because you cannot directly concatenate a string with an integer using the + operator in Python. Python requires all operands of the + operator to be of the same type (either strings or numbers).
+
+To fix this error, you need to convert the integer 99 into a string before concatenating it with the other strings. You can do this using the str() function. Here's the corrected expression:

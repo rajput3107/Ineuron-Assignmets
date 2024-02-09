@@ -1,0 +1,55 @@
+
+### Question 1:
+
+def stutter(word):
+    return f"{word[:2]}... {word[:2]}... {word}?"
+
+# Test cases
+print(stutter("incredible"))    # ➞ "in... in... incredible?"
+print(stutter("enthusiastic"))  # ➞ "en... en... enthusiastic?"
+print(stutter("outstanding"))   # ➞ "ou... ou... outstanding?"
+
+
+### Question 2:
+
+import math
+
+def radians_to_degrees(radians):
+    return round(math.degrees(radians), 1)
+
+# Test cases
+print(radians_to_degrees(1))   # ➞ 57.3
+print(radians_to_degrees(20))  # ➞ 1145.9
+print(radians_to_degrees(50))  # ➞ 2864.8
+```
+
+### Question 3:
+
+def is_curzon(num):
+    num1 = 2 ** num + 1
+    num2 = 2 * num + 1
+    return num1 % num2 == 0
+
+# Test cases
+print(is_curzon(5))  # ➞ True
+print(is_curzon(10)) # ➞ False
+print(is_curzon(14)) # ➞ True
+
+### Question 4:
+def area_of_hexagon(x):
+    return round((3 * math.sqrt(3) * (x ** 2)) / 2, 1)
+
+# Test cases
+print(area_of_hexagon(1)) # ➞ 2.6
+print(area_of_hexagon(2)) # ➞ 10.4
+print(area_of_hexagon(3)) # ➞ 23.4
+
+
+### Question 5:
+def binary(decimal):
+    return bin(decimal)[2:]
+
+# Test cases
+print(binary(1))  # ➞ "1"
+print(binary(5))  # ➞ "101"
+print(binary(10)) # ➞ "1010"

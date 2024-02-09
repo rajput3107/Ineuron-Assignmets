@@ -1,0 +1,28 @@
+1. **Difference between square brackets and parentheses in list comprehension:**
+   - When you enclose a list comprehension in square brackets `[ ]`, it creates a list.
+   - When you enclose it in parentheses `( )`, it creates a generator expression.
+   - The list comprehension `[ ]` evaluates and stores all the values in memory at once, while the generator expression `( )` generates values lazily, i.e., on-demand.
+
+2. **Relationship between generators and iterators:**
+   - Generators are a type of iterator in Python.
+   - Generators are defined using functions and the `yield` statement.
+   - They generate values one at a time and only when needed, thus saving memory.
+   - Both generators and iterators allow for iterating over sequences of data, but generators are more memory efficient.
+
+3. **Signs that a function is a generator function:**
+   - A function is a generator function if it contains one or more `yield` statements.
+   - Generator functions use the `yield` keyword to return values one at a time, suspending their state between calls.
+
+4. **Purpose of the `yield` statement:**
+   - The `yield` statement is used in generator functions to produce a series of values.
+   - When a generator function is called, it returns an iterator called a generator.
+   - Each time the `yield` statement is encountered, the generator function's state is saved, and the value is returned to the caller.
+   - The function execution is paused until the next value is requested.
+
+5. **Relationship between map calls and list comprehensions:**
+   - Both `map` calls and list comprehensions are ways to apply a function to each item in an iterable.
+   - `map` applies a function to every item in an iterable and returns an iterator that yields the results.
+   - List comprehensions, on the other hand, create a new list by applying an expression to each item in an iterable.
+   - List comprehensions are generally more readable and concise for simple operations.
+   - `map` is more suitable when applying a function that already exists and doesn't require much expression complexity.
+   - List comprehensions allow for more complex filtering and transformation operations within the comprehension itself, making them more versatile in some scenarios.

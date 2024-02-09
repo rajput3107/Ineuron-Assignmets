@@ -1,0 +1,73 @@
+
+1. **Find words greater than length k in a list:**
+def find_words_greater_than_k(words, k):
+    return [word for word in words if len(word) > k]
+
+# Example usage:
+word_list = ["apple", "banana", "orange", "kiwi", "grape"]
+k = 5
+print("Words greater than length", k, ":", find_words_greater_than_k(word_list, k))
+
+2. **Remove i-th character from a string:**
+def remove_ith_character(s, i):
+    return s[:i] + s[i+1:]
+
+# Example usage:
+my_string = "example"
+i = 2
+print("String after removing character at index", i, ":", remove_ith_character(my_string, i))
+
+3. **Split and join a string:**
+def split_and_join(s):
+    words = s.split()
+    return '-'.join(words)
+
+# Example usage:
+my_string = "Hello world"
+print("String after split and join:", split_and_join(my_string))
+
+4. **Check if a given string is a binary string or not:**
+def is_binary_string(s):
+    return all(char in '01' for char in s)
+
+# Example usage:
+binary_string = "101010"
+print("Is binary string?", is_binary_string(binary_string))
+
+
+5. **Find uncommon words from two strings:**
+def find_uncommon_words(s1, s2):
+    set1 = set(s1.split())
+    set2 = set(s2.split())
+    return set1.symmetric_difference(set2)
+
+# Example usage:
+string1 = "hello world"
+string2 = "world is beautiful"
+print("Uncommon words:", find_uncommon_words(string1, string2))
+
+6. **Find all duplicate characters in a string:**
+def find_duplicate_characters(s):
+    duplicates = []
+    for char in set(s):
+        if s.count(char) > 1:
+            duplicates.append(char)
+    return duplicates
+
+# Example usage:
+my_string = "hello"
+print("Duplicate characters:", find_duplicate_characters(my_string))
+
+7. **Check if a string contains any special character:**
+import string
+
+def contains_special_character(s):
+    special_characters = set(string.punctuation)
+    for char in s:
+        if char in special_characters:
+            return True
+    return False
+
+# Example usage:
+my_string = "Hello! How are you?"
+print("String contains special character?", contains_special_character(my_string))

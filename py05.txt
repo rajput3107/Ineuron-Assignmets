@@ -1,0 +1,17 @@
+1. An empty dictionary's code looks like: `{}`.
+2. The value of a dictionary with the key 'foo' and the value 42 is simply `42`.
+3. The most significant distinction between a dictionary and a list is that a dictionary is a collection of key-value pairs, whereas a list is a collection of ordered elements accessed by their index.
+4. If you try to access `spam['foo']` where `spam` is `{ 'bar': 100 }`, you'll get a `KeyError` because the key 'foo' does not exist in the dictionary `spam`.
+5. If a dictionary is stored in `spam`, the expression `'cat' in spam` checks if the key 'cat' exists in the dictionary `spam`, while `'cat' in spam.keys()` explicitly checks if 'cat' is a key in the dictionary `spam`.
+6. If a dictionary is stored in `spam`, the expression `'cat' in spam` checks if 'cat' exists as a key in the dictionary `spam`, while `'cat' in spam.values()` checks if 'cat' exists as a value in any of the key-value pairs of the dictionary `spam`.
+7. A shortcut for the given code is:
+
+spam.setdefault('color', 'black')
+
+8. You can "pretty print" dictionary values using the `pprint` module and its `pprint()` function. Here's how you can use it:
+
+import print
+
+my_dict = {'key1': 'value1', 'key2': 'value2'}
+print.print(my_dict)
+

@@ -1,0 +1,109 @@
+
+1. Find the Factorial of a Number:
+
+]# Function to find the factorial of a number
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+# Input from the user
+num = int(input("Enter a number: "))
+
+# Check if the number is negative
+if num < 0:
+    print("Factorial does not exist for negative numbers")
+elif num == 0:
+    print("The factorial of 0 is 1")
+else:
+    print(f"The factorial of {num} is", factorial(num))
+
+2. Display the Multiplication Table:
+
+# Input from the user
+num = int(input("Enter a number to display its multiplication table: "))
+
+# Display the multiplication table
+print(f"Multiplication table of {num}:")
+for i in range(1, 11):
+    print(f"{num} x {i} = {num * i}")
+
+3. Print the Fibonacci Sequence:
+
+# Function to generate Fibonacci sequence up to n terms
+def fibonacci(n):
+    fib_sequence = []
+    a, b = 0, 1
+    for _ in range(n):
+        fib_sequence.append(a)
+        a, b = b, a + b
+    return fib_sequence
+
+# Input from the user
+terms = int(input("Enter the number of terms: "))
+
+# Display the Fibonacci sequence
+print("Fibonacci sequence:")
+print(fibonacci(terms))
+
+4. Check Armstrong Number:
+
+# Function to check if a number is an Armstrong number
+def is_armstrong(num):
+    order = len(str(num))
+    sum = 0
+    temp = num
+    while temp > 0:
+        digit = temp % 10
+        sum += digit ** order
+        temp //= 10
+    return num == sum
+
+# Input from the user
+num = int(input("Enter a number: "))
+
+# Check if the number is an Armstrong number
+if is_armstrong(num):
+    print(num, "is an Armstrong number")
+else:
+    print(num, "is not an Armstrong number")
+
+5. Find Armstrong Numbers in an Interval:
+
+# Function to find Armstrong numbers in a given interval
+def armstrong_in_interval(start, end):
+    armstrong_numbers = []
+    for num in range(start, end + 1):
+        order = len(str(num))
+        sum = 0
+        temp = num
+        while temp > 0:
+            digit = temp % 10
+            sum += digit ** order
+            temp //= 10
+        if num == sum:
+            armstrong_numbers.append(num)
+    return armstrong_numbers
+
+# Input from the user
+start = int(input("Enter the starting number of the interval: "))
+end = int(input("Enter the ending number of the interval: "))
+
+# Display Armstrong numbers in the interval
+print("Armstrong numbers in the interval:", armstrong_in_interval(start, end))
+
+6. Find the Sum of Natural Numbers:
+
+# Function to find the sum of natural numbers up to n
+def sum_of_natural_numbers(n):
+    return n * (n + 1) // 2
+
+# Input from the user
+num = int(input("Enter a positive integer: "))
+
+# Check if the number is positive
+if num < 0:
+    print("Enter a positive integer.")
+else:
+    print("Sum of natural numbers up to", num, "is", sum_of_natural_numbers(num))

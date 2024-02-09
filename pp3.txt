@@ -1,0 +1,69 @@
+
+1. Check if a Number is Positive, Negative, or Zero:
+
+# Input from the user
+num = float(input("Enter a number: "))
+
+# Check if the number is positive, negative, or zero
+if num > 0:
+    print("Positive number")
+elif num == 0:
+    print("Zero")
+else:
+    print("Negative number")
+
+2. Check if a Number is Odd or Even:
+
+# Input from the user
+num = int(input("Enter a number: "))
+
+# Check if the number is odd or even
+if num % 2 == 0:
+    print("Even number")
+else:
+    print("Odd number")
+
+3. Check Leap Year:
+
+# Input from the user
+year = int(input("Enter a year: "))
+
+# Check if the year is a leap year
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(f"{year} is a leap year")
+else:
+    print(f"{year} is not a leap year")
+
+4. Check Prime Number:
+
+# Input from the user
+num = int(input("Enter a number: "))
+
+# Check if the number is prime
+if num > 1:
+    for i in range(2, int(num**0.5) + 1):
+        if (num % i) == 0:
+            print(f"{num} is not a prime number")
+            break
+    else:
+        print(f"{num} is a prime number")
+else:
+    print(f"{num} is not a prime number")
+
+5. Print all Prime Numbers in an Interval of 1-10000:
+
+# Function to check if a number is prime
+def is_prime(num):
+    if num > 1:
+        for i in range(2, int(num**0.5) + 1):
+            if (num % i) == 0:
+                return False
+        return True
+    return False
+
+# Print prime numbers in the interval 1-10000
+print("Prime numbers between 1 and 10000:")
+for number in range(1, 10001):
+    if is_prime(number):
+        print(number, end=" ")
+

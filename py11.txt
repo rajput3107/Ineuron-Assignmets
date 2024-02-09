@@ -1,0 +1,46 @@
+1. 
+assert spam >= 0, "spam should not be negative"
+
+
+2. 
+assert eggs.lower() != bacon.lower(), "eggs and bacon should not be the same"
+
+
+3. 
+assert False, "This assertion always triggers an AssertionError"
+
+4. To call `logging.debug()`, you need to import the logging module and configure the logging level to include DEBUG messages:
+
+import logging
+logging.basicConfig(level=logging.DEBUG)
+
+
+5. To send `logging.debug()` messages to a file named `programLog.txt`, you need to configure the logging module to write to that file:
+
+import logging
+logging.basicConfig(filename='programLog.txt', level=logging.DEBUG)
+
+
+6. The five levels of logging, in increasing order of severity, are:
+   - DEBUG
+   - INFO
+   - WARNING
+   - ERROR
+   - CRITICAL
+
+7. To disable all logging messages, you can set the logging level to `logging.CRITICAL`:
+
+import logging
+logging.disable(logging.CRITICAL)
+
+
+8. Using logging messages is better than using `print()` because logging provides more flexibility and control over where and how the messages are displayed or stored. It allows you to easily adjust the verbosity of your program by changing the logging level and redirecting output to different destinations without modifying the code.
+
+9. In a debugger:
+   - Step Over: Executes the current line of code and stops at the next line. If the next line contains a function call, it executes the function without stepping into it.
+   - Step In: Steps into the function call, taking you to the first line of the function definition.
+   - Step Out: Steps out of the current function and returns to the line of code where the function was called.
+
+10. After clicking Continue, the debugger will stop when it encounters another breakpoint or when the program terminates.
+
+11. A breakpoint is a designated point in the code where the debugger will pause execution, allowing you to inspect variables, step through code, and analyze program behavior at that particular point. It helps in debugging by providing a controlled way to stop the program's execution and examine its state.

@@ -1,0 +1,55 @@
+
+
+1. 
+# zoo.py
+
+def hours():
+    print('Open 9-5 daily')
+
+2. In the interactive interpreter:
+
+>>> import zoo
+>>> zoo.hours()
+Open 9-5 daily
+
+3. In the interpreter:
+
+>>> from zoo import hours
+>>> hours()
+Open 9-5 daily
+
+
+4. In the interpreter:
+
+>>> from zoo import hours as info
+>>> info()
+Open 9-5 daily
+
+
+5. Creating a plain dictionary and printing it:
+
+
+>>> plain_dict = {'a': 1, 'b': 2, 'c': 3}
+>>> print(plain_dict)
+{'a': 1, 'b': 2, 'c': 3}
+
+
+6. Making an OrderedDict and printing it:
+
+
+>>> from collections import OrderedDict
+>>> fancy = OrderedDict([('a', 1), ('b', 2), ('c', 3)])
+>>> print(fancy)
+OrderedDict([('a', 1), ('b', 2), ('c', 3)])
+
+
+Yes, it printed in the same order as the plain dictionary, but remember that OrderedDict maintains the order of insertion.
+
+7. Making a defaultdict and appending a value to it:
+
+
+>>> from collections import defaultdict
+>>> dict_of_lists = defaultdict(list)
+>>> dict_of_lists['a'].append('something for a')
+>>> print(dict_of_lists['a'])
+['something for a']

@@ -1,0 +1,54 @@
+
+### Question 1:
+import math
+
+C = 50
+H = 30
+
+def calculate_Q(D):
+    return int(math.sqrt((2 * C * D) / H))
+
+input_sequence = input("Enter comma-separated values for D: ")
+D_values = input_sequence.split(',')
+
+result = [calculate_Q(int(D)) for D in D_values]
+print(','.join(map(str, result)))
+
+### Question 2:
+def generate_2d_array(X, Y):
+    return [[i * j for j in range(Y)] for i in range(X)]
+
+X, Y = map(int, input("Enter X and Y separated by comma: ").split(','))
+
+result = generate_2d_array(X, Y)
+print(result)
+
+### Question 3:
+words = input("Enter comma-separated words: ").split(',')
+words.sort()
+print(','.join(words))
+
+### Question 4:
+words = input("Enter whitespace-separated words: ").split()
+unique_words = sorted(set(words))
+print(' '.join(unique_words))
+
+### Question 5:
+sentence = input("Enter a sentence: ")
+letters = sum(c.isalpha() for c in sentence)
+digits = sum(c.isdigit() for c in sentence)
+print(f"LETTERS {letters}\nDIGITS {digits}")
+
+
+### Question 6:
+import re
+
+def check_password(password):
+    if 6 <= len(password) <= 12:
+        if re.search("[a-z]", password) and re.search("[0-9]", password) and re.search("[A-Z]", password) and re.search("[$#@]", password):
+            return True
+    return False
+
+passwords = input("Enter comma-separated passwords: ").split(',')
+valid_passwords = [password for password in passwords if check_password(password)]
+print(','.join(valid_passwords))

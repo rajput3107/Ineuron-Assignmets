@@ -1,0 +1,97 @@
+ans1 : The two values of the Boolean data type are typically "true" and "false".In Python, "True" and "False".
+ans2:The three different types of Boolean operators are:
+AND
+OR
+NOT
+
+ans3:
+Truth tables for each Boolean operator:
+   - AND:
+     ```
+     A     B     A AND B
+     --------------------
+     True  True   True
+     True  False  False
+     False True   False
+     False False  False
+     ```
+
+   - OR:
+     ```
+     A     B     A OR B
+     -------------------
+     True  True   True
+     True  False  True
+     False True   True
+     False False  False
+     ```
+
+   - NOT:
+     ```
+     A     NOT A
+     -----------
+     True  False
+     False True
+     ```
+
+ans4. Values of the given expressions:
+   - (5 > 4) and (3 == 5): False
+   - not (5 > 4): False
+   - (5 > 4) or (3 == 5): True
+   - not ((5 > 4) or (3 == 5)): False
+   - (True and True) and (True == False): False
+   - (not False) or (not True): True
+
+ans5. The six comparison operators are:
+   - Equal to (==)
+   - Not equal to (!=)
+   - Greater than (>)
+   - Less than (<)
+   - Greater than or equal to (>=)
+   - Less than or equal to (<=)
+
+ans6. The difference between the equal to (==) and assignment (=) operators is that the equal to operator (==) is used to compare whether two values are equal, while the assignment operator (=) is used to assign a value to a variable. For example, `if x == 5:` checks if the value of x is equal to 5, whereas `x = 5` assigns the value 5 to the variable x.
+
+ans7. The three blocks in the code are:
+   spam = 0
+   if spam == 10:
+       print('eggs')
+   if spam > 5:
+       print('bacon')
+   else:
+       print('ham')
+       print('spam')
+       print('spam')
+   
+
+ans8. Code that prints different messages based on the value stored in spam:
+   
+   spam = 3
+   if spam == 1:
+       print('Hello')
+   elif spam == 2:
+       print('Howdy')
+   else:
+       print('Greetings!')
+ 
+
+ans9. If your program is stuck in an endless loop, you can press `Ctrl + C` to interrupt the program's execution.
+
+ans10. The `break` statement is used to exit the loop prematurely, while the `continue` statement is used to skip the rest of the current iteration and proceed to the next iteration of the loop.
+
+ans11. In Python, `range(10)`, `range(0, 10)`, and `range(0, 10, 1)` are equivalent and all produce the sequence of numbers from 0 to 9. The difference lies in how the arguments are specified:
+   - `range(10)`: Starts from 0 (default start value), ends at 9, with a default step size of 1.
+   - `range(0, 10)`: Starts from 0, ends at 9, with a default step size of 1.
+   - `range(0, 10, 1)`: Starts from 0, ends at 9, with a step size of 1.
+
+ans12. Program using a for loop:
+   
+   for i in range(1, 11):
+       print(i)
+   
+
+13. After importing the module spam, you can call the function bacon() using the dot notation:
+    
+    import spam
+    spam.bacon()
+   

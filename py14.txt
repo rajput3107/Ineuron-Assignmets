@@ -1,0 +1,39 @@
+1. RGBA stands for Red, Green, Blue, and Alpha. It is a color model that represents colors using combinations of red, green, and blue, along with an alpha channel that represents the opacity of the color.
+
+2. In the Pillow module, you can get the RGBA value of any image pixel using the `getpixel()` method. For example:
+   ```python
+   from PIL import Image
+
+   # Open an image file
+   img = Image.open('example_image.jpg')
+
+   # Get the RGBA value of a pixel at position (x, y)
+   rgba_value = img.getpixel((x, y))
+   ```
+
+3. A box tuple in Pillow represents a rectangular region in an image. It is a tuple of four integers `(left, top, right, bottom)` that define the region where:
+   - `left` is the x-coordinate of the left edge of the box,
+   - `top` is the y-coordinate of the top edge of the box,
+   - `right` is the x-coordinate of the right edge of the box, and
+   - `bottom` is the y-coordinate of the bottom edge of the box.
+
+   This tuple is commonly used to define regions of interest, cropping areas, or bounding boxes in images.
+
+4. To find out the width and height of an Image object in a Jupyter notebook, you can use the `.size` attribute:
+
+   width, height = img.size
+
+
+5. To get an Image object for a 100×100 image, excluding the lower-left quarter of it, you can use the `crop()` method:
+
+   img_cropped = img.crop((0, 0, 50, 50))  # Excludes the lower-left quarter
+   
+
+6. After making changes to an Image object, you can save it as an image file using the `save()` method:
+ 
+   img.save('output_image.jpg')  # Save the image as a JPEG file
+ 
+
+7. Pillow's shape-drawing code is contained within the `ImageDraw` module.
+
+8. Image objects do not have drawing methods. Instead, drawing methods are provided by the `ImageDraw` object, which is obtained by calling `ImageDraw.Draw(image)` where `image` is an Image object. This object provides methods for drawing shapes, text, and other graphical elements on the image.

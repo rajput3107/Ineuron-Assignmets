@@ -1,0 +1,23 @@
+1. The PdfFileReader() and PdfFileWriter() File objects should be opened in binary mode ('rb' for reading, 'wb' for writing).
+
+2. To get a Page object for page 5 from a PdfFileReader object, you use the `getPage()` method and pass the index of the page you want, starting from 0. So, to get the Page object for page 5, you would use `getPage(4)`.
+
+3. The PdfFileReader variable that stores the number of pages in the PDF document is `numPages`.
+
+4. If a PdfFileReader object’s PDF is encrypted with the password 'swordfish', you must call the `decrypt('swordfish')` method on the PdfFileReader object before you can obtain Page objects from it.
+
+5. To rotate a page, you use the `rotateClockwise()` or `rotateCounterClockwise()` methods of the Page object.
+
+6. A Run object in Python's python-docx library represents a contiguous run of text with the same style. A Paragraph object represents a paragraph of text in a Word document.
+
+7. To obtain a list of Paragraph objects for a Document object stored in a variable named `doc`, you can use the `paragraphs` attribute of the Document object like this: `doc.paragraphs`.
+
+8. The `Run` object in the python-docx library has the attributes bold, underline, italic, strike, and outline variables.
+
+9. In the python-docx library, the `bold` variable can be set to True, False, or None. True indicates that the text is bold, False indicates that the text is not bold, and None indicates that the bold setting for the text is inherited from the style hierarchy.
+
+10. To create a Document object for a new Word document, you import the Document class from the python-docx library and instantiate it like this: `doc = Document()`.
+
+11. To add a paragraph with the text 'Hello, there!' to a Document object stored in a variable named `doc`, you use the `add_paragraph()` method like this: `doc.add_paragraph('Hello, there!')`.
+
+12. In Word documents, the integers representing the levels of headings typically range from 1 to 9, with 1 being the highest level (main heading) and 9 being the lowest level (sub-sub-subheading).

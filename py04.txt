@@ -1,0 +1,24 @@
+1. `[]` represents an empty list in Python.
+2. To assign the value `'hello'` as the third value in the list stored in the variable `spam`, you would use the following code:
+   
+   spam = [2, 4, 6, 8, 10]
+   spam[2] = 'hello'
+
+3. The value of `spam[int(int('3' * 2) / 11)]` is `spam[3]`, which corresponds to the fourth element in the list `'d'`.
+4. The value of `spam[-1]` is the last element of the list, which is `'d'`.
+5. The value of `spam[:2]` is `['a', 'b']`.
+6. The value of `bacon.index('cat')` is 1, as it returns the index of the first occurrence of the string `'cat'` in the list `bacon`.
+7. The `bacon.append(99)` method adds the value `99` to the end of the list `bacon`, so the list becomes `[3.14, 'cat', 11, 'cat', True, 99]`.
+8. The `bacon.remove('cat')` method removes the first occurrence of the string `'cat'` from the list `bacon`. After this operation, the list becomes `[3.14, 11, 'cat', True]`.
+9. The list concatenation operator is `+`, and the list replication operator is `*`.
+10. The `append()` method adds an item to the end of a list, whereas the `insert()` method inserts an item at a specified index.
+11. The two methods for removing items from a list are `remove()` and `pop()`.
+12. Both list values and string values can be indexed and sliced, can be used in loops, can be concatenated or replicated, and support the `len()` function to determine their length.
+13. Tuples and lists are both sequences in Python, but lists are mutable (can be changed), while tuples are immutable (cannot be changed after creation).
+14. To type a tuple value that only contains the integer 42, you would use parentheses:
+    
+    my_tuple = (42,)
+ 
+15. To get a list value's tuple form, you use the `tuple()` function, and to get a tuple value's list form, you use the `list()` function.
+16. Variables that "contain" list values are actually storing references to the list values.
+17. `copy.copy()` creates a shallow copy of an object, which means it copies the object itself and any references to other objects, but not the objects those references point to. `copy.deepcopy()` creates a deep copy of an object, meaning it copies the object and recursively copies all objects that it references, and all objects referenced by those objects, and so on.

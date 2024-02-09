@@ -1,0 +1,33 @@
+1. Functions are advantageous in programs because they promote code reusability, modularization, and abstraction. They allow you to break down complex tasks into smaller, more manageable pieces of code that can be easily understood and maintained.
+
+2. The code in a function runs when it is called, not when it is specified.
+
+3. In Python, the `def` statement is used to create a function.
+
+4. A function is a block of code that performs a specific task when called, whereas a function call is the invocation of that function to execute its code.
+
+5. In Python, there is one global scope per program, and each function call creates a new local scope.
+
+6. Variables in a local scope cease to exist after the function call returns. They are destroyed, and their memory is deallocated.
+
+7. A return value is the value that a function returns after it has been executed. It represents the output or result of the function's operation. Yes, it is possible to have a return value in an expression, meaning you can use the return value of a function directly within an expression.
+
+8. If a function does not have a return statement, the return value of a call to that function is `None`.
+
+9. To make a function variable refer to the global variable, you can use the `global` keyword within the function. For example:
+
+   x = 10
+   def func():
+       global x
+       x = 20
+   
+
+10. The data type of `None` is `NoneType`.
+
+11. The statement `import areallyourpetsnamederic` would attempt to import a module named `areallyourpetsnamederic` into the Python program. If such a module exists, its contents would be accessible.
+
+12. If you had a `bacon()` feature in a `spam` module, after importing `spam`, you would call it using `spam.bacon()`.
+
+13. To prevent a program from crashing when it encounters an error, you can use exception handling mechanisms like `try`, `except`, `finally` blocks to gracefully handle errors.
+
+14. The purpose of the `try` clause is to enclose the code that might raise an exception. The `except` clause is used to handle the exception that was raised within the `try` block. It allows you to specify how your program should respond when a specific type of exception occurs.

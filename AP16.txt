@@ -1,0 +1,35 @@
+
+Q1. **Benefits of regular expressions:**
+   - Regular expressions provide a powerful and flexible way to search, match, and manipulate text strings.
+   - They allow for complex pattern matching, facilitating tasks such as data validation, text parsing, and string manipulation.
+   - Regular expressions are supported in many programming languages and text processing tools, making them widely applicable across different platforms and environments.
+
+Q2. **Difference between "(ab)c+" and "a(bc)+":**
+   - "(ab)c+" matches one or more occurrences of the sequence "abc", where "ab" appears exactly once.
+   - "a(bc)+" matches one or more occurrences of the sequence "abc", where "bc" appears exactly once.
+   - The unqualified pattern "abc+" would match one or more occurrences of the sequence "abc".
+
+Q3. **Usage of `import re`:**
+   - The `import re` statement is used in Python to import the regular expression module, `re`, which provides functions and methods for working with regular expressions.
+
+Q4. **Special characters in square brackets for expressing a range:**
+   - In square brackets, the hyphen (-) is used to specify a range of characters. For example, [a-z] represents all lowercase letters from 'a' to 'z'.
+   - To include the hyphen character itself or other special characters like ']', they need to be escaped with a backslash (\).
+
+Q5. **Benefits of compiling a regular-expression object:**
+   - Compiling a regular-expression object in Python using the `re.compile()` function allows for the reuse of the compiled pattern, which can improve performance when the pattern needs to be used multiple times.
+   - Compiled regular expressions are pre-processed and optimized, resulting in faster matching compared to repeatedly compiling the same pattern.
+
+Q6. **Examples of using match object returned by `re.match` and `re.search`:**
+   - Accessing matched groups: `match.group()`
+   - Accessing specific groups: `match.group(1)`
+   - Obtaining start and end positions of matches: `match.start()`, `match.end()`
+   - Checking for successful match: `match is not None`
+
+Q7. **Difference between vertical bar (|) and square brackets as a character set:**
+   - Vertical bar (|) denotes alternation, allowing the pattern to match any of the alternatives specified.
+   - Square brackets [] define a character set, allowing the pattern to match any one character from the set.
+
+Q8. **Necessity of using the raw-string indicator (r):**
+   - In regular-expression search patterns, using the raw-string indicator (r) prevents Python's interpreter from interpreting backslashes (\) as escape characters, ensuring that the regular expression is interpreted as intended.
+   - In replacement strings, the raw-string indicator (r) is not necessary as it's typically used for regular expressions themselves, not for replacement strings.

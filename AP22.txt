@@ -1,0 +1,31 @@
+Q1. The built-in `array` package in Python provides a more memory-efficient way to store data compared to lists, especially when dealing with large sequences of uniform data types, such as integers or floating-point numbers.
+
+Q2. Some limitations of the `array` package include its lack of built-in functionality for mathematical operations and transformations commonly found in numerical computing libraries like NumPy. Additionally, arrays created with the `array` package are homogeneous, meaning they can only store elements of a single data type.
+
+Q3. The main differences between the `array` package and the `numpy` package include:
+   - NumPy provides a much broader range of functionality for numerical computing, including mathematical operations, linear algebra, and random number generation, while the `array` package is more limited in scope.
+   - NumPy arrays are more flexible and powerful than arrays created with the `array` package, supporting multidimensional arrays, broadcasting, and advanced indexing and slicing operations.
+
+Q4. 
+- `empty`: Creates a new array of specified shape and data type without initializing entries. The values of the array will be whatever happens to already exist at that memory location.
+- `ones`: Creates a new array of specified shape and data type filled with ones.
+- `zeros`: Creates a new array of specified shape and data type filled with zeros.
+
+Q5. In the `fromfunction` function, the `callable` argument is a function that is called with a tuple of array indices as its argument and returns the value to be placed in the array at that index.
+
+Q6. When a NumPy array is combined with a single-value operand through addition, each element in the array is incremented by the scalar value.
+
+Q7. Yes, array-to-scalar operations can use combined operation-assign operators like `+=` or `*=`. The outcome is that each element in the array is modified according to the combined operation with the scalar value.
+
+Q8. Yes, a NumPy array can contain fixed-length strings. If you allocate a longer string to one of these arrays, the longer string will be truncated to fit the fixed length specified for the array.
+
+Q9. When two NumPy arrays are combined using addition or multiplication, the corresponding elements of the arrays are combined according to the operation. The conditions for combining two NumPy arrays are that they must have compatible shapes, meaning they must have the same dimensions or one of them must be a scalar.
+
+Q10. The best way to use a Boolean array to mask another array is by indexing the array with the Boolean mask. For example: `masked_array = array[boolean_mask]`.
+
+Q11. Three different ways to get the standard deviation of a wide collection of data using standard Python and its packages sorted by execution speed:
+   1. Using NumPy: `numpy.std(data)`
+   2. Using the statistics module: `statistics.stdev(data)`
+   3. Manually calculating the standard deviation: This involves writing custom code to compute the standard deviation based on the mathematical formula. This method is generally slower than using NumPy or the statistics module.
+
+Q12. The dimensionality of a Boolean mask-generated array is the same as the original array. The Boolean mask selects elements from the original array based on the condition specified, resulting in a new array with the same dimensions as the original array.

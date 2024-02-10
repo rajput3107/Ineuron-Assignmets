@@ -1,0 +1,25 @@
+
+
+1. **Purpose of Python's OOP**:
+   The purpose of Python's Object-Oriented Programming (OOP) is to organize code into logical, reusable components called classes and objects. OOP enables the modeling of real-world entities and their interactions, improves code modularity, and promotes code reusability and maintainability.
+
+2. **Inheritance search for an attribute**:
+   In Python, when accessing an attribute of an object, Python searches the instance's namespace first. If it doesn't find the attribute there, it then searches the class's namespace, followed by the superclasses in the inheritance hierarchy until it finds the attribute or raises an AttributeError if the attribute is not found.
+
+3. **Distinguishing between a class object and an instance object**:
+   A class object is a blueprint for creating instances. It defines properties and behaviors that all instances of the class share. An instance object is a specific realization of a class, representing an individual object created from the class blueprint.
+
+4. **Special role of the first argument in a class's method function**:
+   The first argument in a class's method function conventionally refers to the instance itself and is typically named `self`. It allows methods to access and modify attributes specific to each instance.
+
+5. **Purpose of the `__init__` method**:
+   The `__init__` method is a special method in Python classes that serves as the constructor. It is called automatically when a new instance of the class is created. The purpose of `__init__` is to initialize instance variables and perform any necessary setup for the object.
+
+6. **Process for creating a class instance**:
+   To create a class instance in Python, you use the class name followed by parentheses. This calls the class's constructor (`__init__` method) to initialize the instance. Optionally, you can pass arguments to the constructor to customize the initialization.
+
+7. **Process for creating a class**:
+   To create a class in Python, you use the `class` keyword followed by the class name and a colon. Inside the class definition, you define attributes and methods that describe the behavior and properties of objects created from the class.
+
+8. **Definition of superclasses of a class**:
+   Superclasses of a class refer to the classes from which the current class inherits. In Python, you specify superclasses by including them in parentheses after the class name in the class definition. The current class then inherits attributes and methods from its superclasses.

@@ -1,0 +1,32 @@
+
+Q1. **Greedy vs. Non-greedy:**
+   - Greedy syntax matches as much text as possible, while non-greedy matches as little as possible.
+   - To transform a greedy pattern into a non-greedy one, you can introduce a question mark (?) after the quantifier.
+
+Q2. **Greedy vs. Non-greedy Difference:**
+   - Greedy vs. non-greedy makes a difference when the pattern can match multiple substrings in the input.
+   - If you're looking for a non-greedy match but only a greedy one is available, you may need to adjust your pattern or use additional logic to obtain the desired result.
+
+Q3. **Use of non-tagged group in simple match:**
+   - In a simple match without replacement, the use of a non-tagged group is unlikely to make a practical difference as it doesn't affect the matching behavior.
+
+Q4. **Scenario with non-tagged category impact:**
+   - In scenarios where you need to capture substrings for further processing or analysis, using non-tagged categories can significantly impact the program's outcomes by altering the grouping behavior.
+
+Q5. **Look-ahead condition:**
+   - Look-ahead condition not consuming characters can make a difference when you need to assert whether a certain pattern exists in the input without actually consuming it, such as validating patterns in passwords or URLs.
+
+Q6. **Positive vs. Negative look-ahead:**
+   - Positive look-ahead asserts that a pattern must exist ahead in the input, while negative look-ahead asserts that a pattern must not exist ahead in the input.
+
+Q7. **Referring to groups by name:**
+   - Referring to groups by name in a standard expression improves code readability and makes the regex pattern self-explanatory, especially in complex patterns with multiple groups.
+
+Q8. **Identifying repeated items using named groups:**
+   - Yes, you can identify repeated items within a target string using named groups by capturing the repeated pattern and referencing it by name.
+
+Q9. **Scanner interface vs. re.findall:**
+   - The Scanner interface in Java provides tokenization capabilities and allows for parsing input strings based on specified delimiters or patterns, which re.findall in Python does not directly provide.
+
+Q10. **Naming conventions for Scanner objects:**
+   - No, a Scanner object does not have to be named 'scanner'. You can name it according to your preference and the context of your program.

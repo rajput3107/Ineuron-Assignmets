@@ -1,0 +1,26 @@
+Q1. A NumPy array is a multi-dimensional array object that provides efficient storage and operations on homogeneous data. It is mainly used for numerical computing and scientific computing tasks. On the other hand, a Pandas DataFrame is a two-dimensional labeled data structure with columns of potentially different types. It is built on top of NumPy and provides functionalities similar to spreadsheets and relational databases, making it suitable for data manipulation and analysis tasks. You can convert between a NumPy array and a Pandas DataFrame using the `DataFrame()` constructor in Pandas and the `to_numpy()` method.
+
+Q2. When a user enters a stock ticker symbol, potential issues include:
+   - Incorrect or invalid ticker symbols
+   - Ticker symbols for different stock exchanges
+   - Missing or outdated data for the specified symbol
+To handle these issues, you can:
+   - Validate the ticker symbol format
+   - Check if the symbol exists and is available on the desired stock exchange
+   - Provide error messages or prompts for the user to enter a valid symbol
+   - Implement error handling mechanisms to gracefully handle exceptions
+
+Q3. Some plotting techniques used to produce stock market charts include:
+   - Line charts: Displaying price movements over time.
+   - Candlestick charts: Showing open, high, low, and close prices for each time period.
+   - Volume charts: Illustrating trading volume over time.
+   - Moving averages: Plotting averages of past prices to smooth out fluctuations and identify trends.
+   - Technical indicators: Adding indicators such as Relative Strength Index (RSI), Moving Average Convergence Divergence (MACD), etc.
+
+Q4. It is essential to print a legend on a stock market chart to provide context and clarity to the information presented. The legend helps viewers understand the meaning of different elements in the chart, such as lines representing price movements, volume bars, and any additional indicators or annotations.
+
+Q5. To limit the length of a Pandas DataFrame to less than a year, you can filter the DataFrame based on the date column. For example, you can use boolean indexing to select rows within a specific date range, or you can use functions like `DataFrame.loc[]` or `DataFrame.query()` to filter rows based on date conditions.
+
+Q6. A 180-day moving average is a technical analysis indicator used to smooth out price data by creating a continuously updated average of the most recent 180 days' closing prices. It helps identify trends and reversals in the price movements of a security over a medium-term period.
+
+Q7. "Indirect" importing in Python typically refers to importing modules indirectly through other modules. In the context of the chapter's final example, if it involved importing modules indirectly, it might have imported one module within another module, which is a common practice in Python to organize code and manage dependencies. To perform indirect importing, you simply import the module that you need within the code of another module where it is required.

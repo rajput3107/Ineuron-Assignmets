@@ -1,0 +1,30 @@
+
+Q1. **Differences between text and binary files:**
+   - Text files store data in a human-readable format using characters, typically encoded in ASCII or UTF-8, while binary files store data in a non-human-readable format using sequences of bytes. Text files may contain newline characters for line breaks, while binary files store raw data without any specific character encoding.
+
+Q2. **Scenarios for using text vs. binary files:**
+   - Text files are suitable for storing and handling textual data such as configuration files, logs, and documents where human readability is important. Binary files are preferable for storing complex data structures like images, videos, and executable files, or when precise control over data representation is needed.
+
+Q3. **Issues with using binary operations for Python integers:**
+   - Some issues with directly reading and writing Python integers to disk in binary format include endianness concerns (big-endian vs. little-endian), platform compatibility issues, and the need for explicit conversion between integer objects and byte representations.
+
+Q4. **Benefit of using the 'with' keyword:**
+   - Using the 'with' keyword ensures proper handling of file resources by automatically closing the file after the block of code completes execution. This helps prevent resource leaks and makes the code cleaner and more concise.
+
+Q5. **Trailing newline in Python:**
+   - When reading a line of text, Python preserves the trailing newline character if it exists in the file. When writing a line of text using the 'w' mode, Python does not append a newline character automatically. However, using 'a' mode for appending lines will preserve the newline character.
+
+Q6. **File operations for random access:**
+   - File operations like `seek()` and `tell()` enable random-access operations by allowing the cursor to move to a specific position within the file and retrieving the current cursor position, respectively.
+
+Q7. **Usage of the struct package:**
+   - The struct package is most commonly used for handling binary data where precise control over the format and interpretation of data is required, such as in network protocols, file formats, and low-level system interactions.
+
+Q8. **When pickling is the best option:**
+   - Pickling is the best option when you need to serialize Python objects into a byte stream for storage or transmission while preserving their structure and state, especially when dealing with complex data structures or custom objects.
+
+Q9. **Best use cases for the shelve package:**
+   - The shelve package is best used when you need persistent storage for Python objects with dictionary-like access patterns, allowing you to store and retrieve objects by keys in a disk-based dictionary-like structure.
+
+Q10. **Special restriction when using the shelve package:**
+   - One special restriction when using the shelve package is that keys must be strings, as the shelve module internally uses pickle to serialize keys. This differs from other data dictionaries where keys may be of various types, including integers and tuples.

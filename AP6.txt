@@ -1,0 +1,21 @@
+
+1. **Applications for exception processing**:
+   - Error Handling: Exception processing allows you to gracefully handle errors that may occur during program execution, preventing crashes and providing informative error messages to users.
+   - Input Validation: Exceptions can be used to validate user input and handle cases where input does not meet the expected criteria, such as invalid data types or out-of-range values.
+   - Resource Management: Exceptions are useful for managing resources such as file handles, network connections, and database connections. They ensure that resources are properly closed and released, even if errors occur during processing.
+
+2. **Consequences of not treating an exception**:
+   If an exception is not handled or treated in any way, it will propagate up the call stack until it reaches the top-level of the program. This may result in the program terminating abruptly and displaying an error message to the user. In Python, an unhandled exception will typically cause the program to terminate and display a traceback, indicating where the exception occurred.
+
+3. **Options for recovering from an exception**:
+   - Handling the Exception: You can use a try-except block to catch and handle specific exceptions, allowing the program to continue execution even if an error occurs.
+   - Logging: You can log information about the exception, including the error message, traceback, and context, to aid in debugging and troubleshooting.
+   - Graceful Degradation: Depending on the nature of the exception, you may be able to recover from the error and continue program execution in a degraded state, allowing the program to perform essential functions despite encountering errors.
+
+4. **Methods for triggering exceptions in your script**:
+   - Raise Statement: You can use the `raise` statement to explicitly raise exceptions at any point in your script. This allows you to handle exceptional conditions or errors that cannot be resolved within the normal flow of the program.
+   - Built-in Functions: Certain built-in functions in Python may raise exceptions under specific conditions. For example, attempting to open a non-existent file using the `open()` function will raise a `FileNotFoundError` exception.
+
+5. **Methods for specifying actions to be executed at termination time**:
+   - Finally Block: You can use a `finally` block in conjunction with a try-except block to specify cleanup code that should be executed regardless of whether an exception occurs or not. Code within the `finally` block will always be executed, even if an exception is raised and not caught.
+   - Context Managers: Context managers, implemented using the `with` statement, allow you to specify setup and cleanup actions to be executed before and after a block of code, respectively. Context managers automatically invoke the cleanup actions even if an exception occurs within the block of code.

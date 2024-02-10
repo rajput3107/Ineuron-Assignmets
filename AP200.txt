@@ -1,0 +1,30 @@
+
+1. **Comparison of float and Decimal classes:**
+   - Floats are implemented using binary floating-point arithmetic and have limitations due to precision issues and rounding errors. Decimals, on the other hand, are based on decimal floating-point arithmetic and offer precise decimal representation without loss of accuracy. Decimals are suitable for financial and monetary calculations where accuracy is critical but may be slower and consume more memory compared to floats.
+
+2. **Decimal('1.200') vs Decimal('1.2'):**
+   - These are two different objects representing the exact same value. Although they represent the same value, they may have different internal states due to the different string representations used to create them.
+
+3. **Equality of Decimal('1.200') and Decimal('1.2'):**
+   - If the equality of Decimal('1.200') and Decimal('1.2') is checked, the result will be `False`. Although they represent the same value, the equality check also considers the internal representation, which may differ due to the different string representations used to create them.
+
+4. **Preferable to start Decimal object with a string:**
+   - It is preferable to start a Decimal object with a string rather than a floating-point value to avoid issues with floating-point representation errors. Using a string ensures that the Decimal object accurately represents the value intended by the user without any loss of precision.
+
+5. **Combining Decimal objects with integers:**
+   - It is simple to combine Decimal objects with integers in arithmetic operations. Decimal objects seamlessly handle arithmetic with integers, ensuring precision and accuracy in calculations.
+
+6. **Combining Decimal objects and floating-point values:**
+   - Decimal objects and floating-point values can be combined, but it's important to note that arithmetic operations involving floats and Decimals may lead to loss of precision due to the limitations of floating-point arithmetic.
+
+7. **Example of absolute precision with Fraction class:**
+   - An example of a quantity that can be expressed with absolute precision using the Fraction class is \( \frac{1}{3} \), which cannot be represented accurately with finite decimal or floating-point precision but can be represented exactly as a fraction.
+
+8. **Quantity accurately expressed by Decimal/Fraction but not by floating-point value:**
+   - An example is \( \frac{1}{3} \), which cannot be accurately represented by floating-point numbers due to their finite precision and the inability to represent recurring decimals.
+
+9. **Internal state of Fraction objects (Fraction(1, 2) and Fraction(5, 10)):**
+   - The internal state of Fraction(1, 2) and Fraction(5, 10) objects is the same. Fraction objects automatically reduce fractions to their simplest form, so both objects represent the same fraction, \( \frac{1}{2} \).
+
+10. **Relation between Fraction class and integer type (int):**
+    - The Fraction class does not inherit from the integer type (int) nor is it contained within it. Instead, it is a separate class in Python's standard library used for representing rational numbers accurately without loss of precision. However, Fraction objects can be initialized with integer values.

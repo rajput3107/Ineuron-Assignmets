@@ -1,0 +1,36 @@
+
+Q1. **Relationship between class and instances:**
+   - The relationship between a class and its instances is a one-to-many partnership. A class defines a blueprint or template from which multiple instances, or objects, can be created.
+
+Q2. **Data held only in an instance:**
+   - Instance-specific data, also known as instance variables, is held only in an instance. These variables store unique information for each instance of a class.
+
+Q3. **Knowledge stored in a class:**
+   - A class stores shared data and behavior, also known as class variables and methods, respectively. Class variables represent data shared among all instances of the class, while methods define the behaviors associated with the class.
+
+Q4. **Method vs. regular function:**
+   - A method is a function defined within a class and operates on instances of that class. It is accessed through an instance or the class itself and implicitly passes the instance (as 'self') to the method. A regular function is not associated with any class and is independent of instances.
+
+Q5. **Inheritance in Python:**
+   - Yes, inheritance is supported in Python. The syntax for inheritance involves specifying the parent class(es) inside parentheses after the subclass name in the class definition. For example: `class SubClass(ParentClass):`.
+
+Q6. **Encapsulation in Python:**
+   - Python supports encapsulation to some extent by allowing the declaration of private instance variables using a naming convention with a leading underscore (_). However, Python does not enforce strict encapsulation like some other programming languages.
+
+Q7. **Class variable vs. instance variable:**
+   - Class variables are shared among all instances of a class and are defined within the class but outside any method. Instance variables are specific to each instance of a class and are defined within methods using the 'self' keyword.
+
+Q8. **Usage of 'self' in method definitions:**
+   - 'self' must be included as the first parameter in a class's method definitions to refer to the instance invoking the method. It allows access to instance variables and methods within the class.
+
+Q9. **Difference between \_\_add\_\_ and \_\_radd\_\_ methods:**
+   - \_\_add\_\_ is called when the "+" operator is used and the object is on the left side. \_\_radd\_\_ is called when the object is on the right side, and the left-hand side object does not support the operation.
+
+Q10. **Necessity of reflection method:**
+   - Reflection methods are necessary when you need to dynamically inspect or modify the attributes and behaviors of objects at runtime. They are not needed when the operations are known and fixed at compile time.
+
+Q11. **\_\_iadd\_\_ method:**
+   - The \_\_iadd\_\_ method is called for the "+=" operator and is used to implement in-place addition for mutable objects.
+
+Q12. **Inheritance of \_\_init\_\_ method:**
+   - Yes, the \_\_init\_\_ method is inherited by subclasses. If you need to customize its behavior within a subclass, you can override the \_\_init\_\_ method in the subclass and define the customized initialization logic specific to the subclass.

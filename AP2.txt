@@ -1,0 +1,29 @@
+
+1. **Relationship between classes and modules**:
+   In Python, a module is a file containing Python definitions and statements. A class is a type of Python statement that defines a blueprint for creating objects. Classes can be defined within modules, and modules can contain classes. Modules provide a way to organize classes and other code into separate files for better organization and reusability.
+
+2. **Making instances and classes**:
+   To create instances of a class in Python, you call the class name followed by parentheses. This invokes the class's constructor method (`__init__`) to initialize the instance. Classes are created using the `class` keyword followed by the class name and a colon.
+
+3. **Creation of class attributes**:
+   Class attributes are created within the class definition outside of any method. They are typically defined directly beneath the class header and are shared among all instances of the class.
+
+4. **Creation of instance attributes**:
+   Instance attributes are created within the `__init__` method of the class. They are specific to each instance and are typically assigned using the `self` keyword within the `__init__` method.
+
+5. **Meaning of "self" in a Python class**:
+   In Python, `self` refers to the instance of the class. It is a convention (though not a keyword) used to represent the instance itself within the class's methods. By using `self`, methods can access and modify instance attributes and call other methods within the same class.
+
+6. **Handling operator overloading in a Python class**:
+   Python classes can handle operator overloading by implementing special methods (also known as magic or dunder methods) that correspond to the operators. For example, `__add__` for addition, `__sub__` for subtraction, and so on.
+
+7. **Considerations for allowing operator overloading of classes**:
+   Operator overloading should be considered when the operations between instances of a class have a meaningful interpretation beyond the built-in behavior. It can make code more readable and expressive when used judiciously.
+
+8. **Most popular form of operator overloading**:
+   The most popular form of operator overloading in Python is probably arithmetic operations, such as addition (`+`), subtraction (`-`), multiplication (`*`), and division (`/`).
+
+9. **Two important concepts to comprehend Python OOP code**:
+   Two important concepts in Python OOP code are:
+   - **Classes and Instances**: Understanding how classes define blueprints for creating objects and how instances of those classes represent individual objects.
+   - **Inheritance and Polymorphism**: Understanding how classes can inherit attributes and methods from other classes, and how polymorphism allows objects of different classes to be treated interchangeably.

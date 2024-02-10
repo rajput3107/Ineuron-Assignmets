@@ -1,0 +1,15 @@
+
+1. **Concept of an abstract superclass**:
+   An abstract superclass in Python is a class that is designed to be subclassed but not instantiated itself. It defines methods that must be implemented by its subclasses, serving as a blueprint for those subclasses. Abstract superclasses often contain abstract methods, which are method declarations without implementations. Python's `abc` module provides tools for defining abstract base classes.
+
+2. **Effect of a basic assignment statement in the top level of a class statement**:
+   When a basic assignment statement is used at the top level of a class statement in Python, it defines a class attribute. This attribute will be shared among all instances of the class rather than being specific to any one instance.
+
+3. **Reason for manually calling a superclass's `__init__` method**:
+   In Python, when a subclass overrides the `__init__` method of its superclass, it must call the superclass's `__init__` method explicitly if it wants to ensure that the initialization logic of the superclass is executed. This is necessary to properly initialize inherited attributes and perform any additional setup defined in the superclass's constructor.
+
+4. **Augmenting an inherited method without replacing it**:
+   To augment an inherited method without completely replacing it, you can call the superclass's method from within the subclass's method using the `super()` function. This allows you to extend or modify the behavior of the inherited method while still leveraging the functionality provided by the superclass.
+
+5. **Difference between the local scope of a class and that of a function**:
+   In Python, the local scope of a class includes the class's namespace, which consists of class attributes and methods. This namespace is accessible from within methods and other class-level definitions. In contrast, the local scope of a function is limited to the function's body and parameters. Variables defined within a function are local to that function and are not directly accessible outside of it.

@@ -1,0 +1,24 @@
+
+1. **Two latest user-defined exception constraints in Python 3.X**:
+   In Python 3.x, the latest user-defined exception constraints are:
+   - Inheriting from `BaseException` or its subclasses: User-defined exceptions should typically inherit from `BaseException`, `Exception`, or one of their subclasses to maintain compatibility with the exception hierarchy.
+   - Defining custom exception classes: User-defined exceptions should be defined as custom classes to encapsulate specific types of errors or exceptional conditions in a structured manner.
+
+2. **Matching class-based exceptions to handlers**:
+   Class-based exceptions that have been raised are matched to handlers based on their inheritance hierarchy. Python searches for the most specific exception handler that matches the raised exception type. If a matching handler is found, the associated code block is executed to handle the exception.
+
+3. **Methods for attaching context information to exception artifacts**:
+   Two methods for attaching context information to exception artifacts include:
+   - Using the `with_traceback()` method: This method allows you to set or modify the traceback associated with an exception object. You can use it to attach additional context information to the traceback.
+   - Including context information in the exception message: You can modify the exception message to include relevant context information, such as the state of the program or specific details about the error condition.
+
+4. **Methods for specifying the text of an exception object's error message**:
+   Two methods for specifying the text of an exception object's error message are:
+   - Overriding the `__str__()` method: You can override the `__str__()` method in your custom exception class to specify the text of the error message returned when the exception is converted to a string.
+   - Passing a message to the exception constructor: When raising a custom exception, you can pass an error message as an argument to the exception constructor to specify the text of the error message directly.
+
+5. **Reasons for no longer using string-based exceptions**:
+   String-based exceptions have been deprecated and are no longer recommended for several reasons:
+   - Lack of structure: String-based exceptions do not provide a structured way to represent exception types and attributes, making error handling more challenging.
+   - Limited functionality: String-based exceptions lack the functionality and capabilities of class-based exceptions, such as inheritance, traceback information, and custom attributes.
+   - Readability and maintainability: Class-based exceptions offer improved readability and maintainability compared to string-based exceptions by providing a standardized way to define and handle exceptions in Python code.

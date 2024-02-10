@@ -1,0 +1,15 @@
+
+1. **Meaning of multiple inheritance**:
+   Multiple inheritance in object-oriented programming refers to the ability of a class to inherit attributes and methods from more than one parent class. In languages like Python, a class can inherit from multiple classes, which means it can access attributes and methods from all of its parent classes. This allows for code reuse and can be useful for modeling complex relationships.
+
+2. **Concept of delegation**:
+   Delegation is a design pattern where an object passes off responsibility for a particular task to another object. Instead of performing the task itself, the object delegates the task to another object, which is better suited to handle it. Delegation promotes code reuse and modularity by allowing objects to collaborate and share responsibilities.
+
+3. **Concept of composition**:
+   Composition is a design principle in object-oriented programming where objects are composed of other objects as parts. Unlike inheritance, where objects inherit behavior and attributes from parent classes, composition involves creating complex objects by combining simpler objects. This promotes code reuse, encapsulation, and flexibility in design.
+
+4. **Bound methods and their usage**:
+   In Python, a bound method is a method that is associated with an instance of a class. When you access a method of an object, it automatically passes the object itself as the first argument (commonly named `self`) to the method. Bound methods are accessed using dot notation (e.g., `object.method()`), and they automatically receive the instance as the first argument, allowing them to operate on the instance's data.
+
+5. **Purpose of pseudoprivate attributes**:
+   Pseudoprivate attributes in Python are attributes whose names begin with double underscores (`__`). These attributes are subject to name mangling, which means Python changes the name of the attribute to include the class name. The purpose of pseudoprivate attributes is to avoid naming conflicts in subclasses that may inadvertently override attributes of the superclass. They provide a level of name privacy and help prevent accidental modification or access from outside the class. However, they are not truly private and can still be accessed outside the class if necessary.

@@ -1,0 +1,30 @@
+
+1. New features added in Python 3.8 version include:
+   - Assignment expressions (the walrus operator `:=`).
+   - Positional-only parameters.
+   - TypedDict.
+   - Syntax warning for syntax deprecations.
+   - f-strings now support the `=` specifier to format numbers with a specific width.
+   - `math.prod()` function.
+   - The `functools.cached_property` decorator.
+   - Performance improvements in the `dict` data type.
+   - Parallel filesystem cache for compiled bytecode files.
+   - New syntax warnings for using `==` and `!=` with `None`.
+   - New syntax warnings for invalid escape sequences.
+   - New APIs to customize the Python import system.
+   - A new `pickle` protocol version (5) with out-of-band data buffers.
+   - A number of optimizations and improvements in CPython internals.
+
+2. Monkey patching in Python refers to the practice of dynamically modifying or extending a module or class at runtime. It involves altering the behavior of existing code by adding, modifying, or deleting attributes or methods of classes or objects at runtime.
+
+3. The difference between a shallow copy and a deep copy is as follows:
+   - Shallow copy: A shallow copy creates a new object but inserts references to the objects found in the original. This means that changes made to the original objects will be reflected in the copied objects and vice versa, as they share the same references.
+   - Deep copy: A deep copy creates a new object and recursively copies all objects found in the original object. This results in a completely independent copy, where changes made to the original objects are not reflected in the copied objects, and vice versa.
+
+4. The maximum possible length of an identifier in Python is implementation-dependent. However, the Python Language Reference suggests that identifiers can be of any length but should not be unnecessarily long.
+
+5. Generator comprehension, also known as generator expression, is a concise way to create a generator object in Python. It follows a syntax similar to list comprehension but uses parentheses `()` instead of square brackets `[]`. Generator comprehensions produce values lazily, meaning they generate values one at a time as opposed to creating the entire sequence in memory at once. This makes them memory-efficient for large or infinite sequences. Example:
+
+
+# Generator comprehension example
+my_generator = (x ** 2 for x in range(10))

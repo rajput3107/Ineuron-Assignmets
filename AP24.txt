@@ -1,0 +1,16 @@
+Q1. To increase the comparison between different figures on the same graph, you can adjust various visual properties such as line styles, colors, markers, and labels. Additionally, you can use legends, titles, and annotations to provide context and clarity to the comparison.
+
+Q2. Compound interest allows the interest to accumulate on both the initial principal and the accumulated interest from previous periods. This results in exponential growth of the investment over time. In contrast, a higher rate of interest that does not compound would only apply the interest to the initial principal, leading to slower growth over time.
+
+Q3. A histogram is a graphical representation of the distribution of numerical data. It consists of a series of contiguous rectangular bars, where the area of each bar represents the frequency of data values within a specific interval or bin. One numpy method for creating a histogram graph is `numpy.histogram()`.
+
+Q4. To change the aspect ratios between the X and Y axes in a matplotlib plot, you can use the `plt.axis('equal')` command. This command ensures that one unit on the x-axis is equal to one unit on the y-axis, effectively making the aspect ratio equal.
+
+Q5. 
+- Dot product: The dot product of two numpy arrays results in a scalar value computed by summing the element-wise products of the arrays.
+- Outer product: The outer product of two numpy arrays results in a new array where each element is the product of every combination of elements from the two arrays.
+- Regular multiplication: Regular multiplication of two numpy arrays is performed element-wise, meaning each element in one array is multiplied by the corresponding element in the other array, resulting in a new array of the same shape.
+
+Q6. Before buying a home, you might use the numpy function `numpy.pmt()` (Payment) to measure your monthly mortgage payment. This function calculates the monthly payment for a loan based on constant payments and a constant interest rate.
+
+Q7. Yes, string data can be stored in numpy arrays, but numpy arrays are designed for homogeneous data types, so all elements in the array must have the same length. If you store strings in a numpy array, they will be padded with spaces to match the length of the longest string in the array. This can lead to inefficient memory usage if the strings have varying lengths.

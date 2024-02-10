@@ -1,0 +1,34 @@
+
+Q1. Here's a function that employs both positive and negative indexing:
+
+def index_example(my_string):
+    print("First character:", my_string[0])
+    print("Last character:", my_string[-1])
+
+index_example("Hello")
+
+
+There are no repercussions to using both positive and negative indexing in Python. Positive indexing starts from 0, where the first element is indexed as 0, and negative indexing starts from -1, where the last element is indexed as -1.
+
+Q2. The most effective way to start with 1,000 elements in a Python list, assuming all elements should be set to the same value, is by using list multiplication:
+
+
+my_list = [0] * 1000
+
+This creates a list with 1000 elements, all initialized to 0.
+
+Q3. You can slice a list to get every other part while missing the rest using the step parameter in slicing. For example:
+
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+new_list = my_list[::2]  # start:stop:step
+print(new_list)  # Output: [1, 3, 5, 7, 9]
+
+Q4. Indexing retrieves individual elements from a sequence (like a list or string), while slicing retrieves a contiguous section of the sequence.
+
+Q5. If one of the slicing expression's indexes is out of range, Python will not raise an error. Instead, it will return the valid elements within the range specified by the slice expression.
+
+Q6. To allow a function to change the values of a list passed to it, you should avoid reassigning the parameter to a new list within the function. Changes made to the list itself will be reflected outside the function.
+
+Q7. An unbalanced matrix is a matrix where the number of rows is not equal to the number of columns. It means the matrix is not square.
+
+Q8. It is necessary to use either list comprehension or a loop to create arbitrarily large matrices because the size of matrices needs to be dynamically determined and filled with appropriate values, which can only be achieved through iteration. This allows for flexibility in defining the size and contents of the matrix based on specific requirements.

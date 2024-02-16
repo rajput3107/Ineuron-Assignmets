@@ -1,0 +1,23 @@
+This task involves building and training deep neural networks (DNNs) for various tasks such as classification, transfer learning, and pretraining on an auxiliary task using the MNIST dataset. Here's a step-by-step guide to accomplish each part of the task:
+
+### Part 1: Deep Learning
+a. Build a DNN with five hidden layers of 100 neurons each, He initialization, and the ELU activation function.
+b. Train the DNN on digits 0 to 4 of the MNIST dataset using Adam optimization and early stopping.
+c. Tune hyperparameters using cross-validation.
+d. Add Batch Normalization and compare learning curves.
+e. Add dropout to every layer and evaluate its impact.
+
+### Part 2: Transfer Learning
+a. Create a new DNN by reusing all pretrained hidden layers of the previous model and replacing the softmax output layer.
+b. Train the new DNN on digits 5 to 9 of MNIST, using only 100 images per digit.
+c. Cache the frozen layers and measure training time.
+d. Reuse four hidden layers instead of five and evaluate precision.
+e. Unfreeze the top two hidden layers and continue training to improve performance.
+
+### Part 3: Pretraining on an Auxiliary Task
+a. Build two DNNs (DNN A and B) without the output layer, each with five hidden layers of 100 neurons, He initialization, and ELU activation. Add one more hidden layer with 10 units on top of both DNNs.
+b. Generate a training batch containing pairs of MNIST images, with half of the pairs belonging to the same class and the other half from different classes.
+c. Train DNN A and B on this training set.
+d. Create a new DNN by reusing and freezing the hidden layers of DNN A, and add a softmax output layer on top with 10 neurons. Train this network on split #2 of MNIST.
+
+For each part, you'll need to implement the required neural network architectures, training loops, hyperparameter tuning, and evaluation procedures using TensorFlow or another deep learning framework. These tasks involve several advanced techniques in deep learning, including transfer learning and multitask learning, and they require careful implementation and experimentation to achieve high performance.

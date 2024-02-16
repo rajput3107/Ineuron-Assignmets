@@ -1,0 +1,60 @@
+1. **Feature Engineering:**
+   - Feature engineering involves creating new features from existing ones or transforming raw data into a format suitable for machine learning algorithms.
+   - Aspects of feature engineering include:
+     - **Feature Creation:** Generating new features by combining, transforming, or extracting information from existing features.
+     - **Feature Transformation:** Converting features into a more suitable representation, such as scaling, normalization, or logarithmic transformation.
+     - **Handling Missing Data:** Dealing with missing values through imputation or deletion.
+     - **Handling Categorical Data:** Encoding categorical variables into numerical format using techniques like one-hot encoding or label encoding.
+     - **Feature Scaling:** Scaling numerical features to a similar range to prevent certain features from dominating others during model training.
+
+2. **Feature Selection:**
+   - Feature selection is the process of choosing the most relevant features to improve model performance and reduce overfitting.
+   - The aim of feature selection is to enhance model interpretability, reduce computational complexity, and improve generalization.
+   - Methods of feature selection include:
+     - **Filter Methods:** Evaluate features based on statistical properties or information gain and select the most relevant ones. Examples include correlation coefficient, chi-squared test, and mutual information.
+     - **Wrapper Methods:** Employ predictive models to evaluate subsets of features and select the best-performing subset. Examples include forward selection, backward elimination, and recursive feature elimination.
+
+3. **Filter vs. Wrapper Approaches:**
+   - **Filter Approach:**
+     - Pros: Computationally efficient, less prone to overfitting, applicable to high-dimensional datasets.
+     - Cons: Ignores feature interactions, may not capture complex relationships between features and target variable.
+   - **Wrapper Approach:**
+     - Pros: Considers feature interactions, can lead to better model performance.
+     - Cons: Computationally expensive, prone to overfitting, may not generalize well to new data.
+
+4. 
+   i. **Overall Feature Selection Process:**
+      - Define the objective and criteria for feature selection.
+      - Preprocess the data, including handling missing values and encoding categorical variables.
+      - Select a feature selection method based on the dataset characteristics and objective.
+      - Evaluate the selected features using appropriate performance metrics and validate the model.
+   ii. **Key Principle of Feature Extraction:** Feature extraction involves reducing the dimensionality of the dataset by transforming original features into a lower-dimensional space while preserving essential information. Principal Component Analysis (PCA) is one of the widely used feature extraction algorithms.
+
+5. **Feature Engineering in Text Categorization:**
+   - In text categorization, feature engineering may involve converting text data into numerical features using techniques like Bag-of-Words, TF-IDF (Term Frequency-Inverse Document Frequency), or word embeddings.
+   - Additional features may include text length, word frequency, and presence of specific keywords.
+
+6. **Cosine Similarity:**
+   - Cosine similarity is a good metric for text categorization because it measures the similarity of document vectors irrespective of their magnitude.
+   - Cosine similarity between two vectors \(A\) and \(B\) is calculated as the cosine of the angle between them: \( \text{cosine\_similarity} = \frac{A \cdot B}{\|A\| \times \|B\|} \).
+   - Cosine similarity between the given document-term matrices can be calculated using the formula.
+
+7. 
+   i. **Hamming Distance Formula:** Hamming distance is the number of positions at which corresponding bits are different between two binary strings. Between \(10001011\) and \(11001111\), the Hamming distance is \(2\).
+   ii. **Jaccard Index and Similarity Matching Coefficient:** Calculate the Jaccard index and similarity matching coefficient for the given feature sets.
+
+8. **High-Dimensional Dataset:**
+   - A high-dimensional dataset refers to a dataset with a large number of features or dimensions.
+   - Real-life examples include gene expression data, image data with pixel features, and text data with word embeddings.
+   - Difficulties in using machine learning techniques on high-dimensional datasets include increased computational complexity, the curse of dimensionality, and overfitting.
+   - Techniques such as feature selection, dimensionality reduction, and regularization can address these challenges.
+
+9. **Quick Notes:**
+   - **PCA (Personal Computer Analysis):** PCA is Principal Component Analysis, a dimensionality reduction technique used to reduce the number of features while preserving most of the variance in the data.
+   - **Use of Vectors:** Vectors are used to represent data points and features in machine learning algorithms, facilitating mathematical operations and computations.
+   - **Embedded Technique:** Embedded techniques perform feature selection as part of the model training process, such as regularization methods like Lasso and Ridge regression.
+
+10. **Comparison:**
+    1. **Sequential Backward Exclusion vs. Sequential Forward Selection:** Both are feature selection methods where one removes features iteratively while the other adds features.
+    2. **Filter vs. Wrapper Methods:** Filter methods evaluate features independently of the model, while wrapper methods use model performance to select features.
+    3. **SMC vs. Jaccard Coefficient:** SMC measures the similarity of two sets based on the intersection and union of their elements, while the Jaccard

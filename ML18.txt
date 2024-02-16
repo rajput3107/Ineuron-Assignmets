@@ -1,0 +1,48 @@
+1. **Supervised vs. Unsupervised Learning:**
+   - Supervised learning involves training a model on a labeled dataset, where each data instance is associated with a target label. The goal is to learn a mapping from input features to output labels based on the provided examples. Examples include:
+     - Email spam detection: Given labeled emails (spam or not spam), the model learns to classify new emails as spam or not spam.
+     - Handwritten digit recognition: Given labeled images of handwritten digits (0-9), the model learns to recognize digits in new images.
+   - Unsupervised learning involves training a model on an unlabeled dataset, where the model learns to find patterns or structures in the data without explicit guidance. Examples include:
+     - Clustering customer segments: Grouping customers based on their purchasing behavior without prior knowledge of customer segments.
+     - Topic modeling: Identifying themes or topics in a collection of documents without predefined categories.
+
+2. **Unsupervised Learning Applications:**
+   - Some unsupervised learning applications include:
+     - Anomaly detection: Identifying unusual patterns or outliers in data.
+     - Dimensionality reduction: Reducing the number of features while preserving the important information in the data.
+     - Density estimation: Estimating the probability density function of the data distribution.
+
+3. **Types of Clustering Methods:**
+   - Partitioning methods: Divide data into non-overlapping clusters where each data point belongs to exactly one cluster (e.g., k-means).
+   - Hierarchical methods: Create a hierarchy of clusters where clusters at one level are formed by merging or splitting clusters at the previous level.
+   - Density-based methods: Define clusters as areas of high density separated by areas of low density (e.g., DBSCAN).
+
+4. **Determining Cluster Consistency in k-means:**
+   - In the k-means algorithm, the consistency of clustering is determined by minimizing the within-cluster sum of squared distances (SSE) from the cluster centroids to the data points assigned to each cluster.
+
+5. **Difference between k-means and k-medoids:**
+   - The key difference between k-means and k-medoids lies in the way they define cluster centers.
+   - In k-means, cluster centers are represented by the mean of the data points in the cluster, whereas in k-medoids, cluster centers are represented by the actual data points themselves, known as medoids.
+
+6. **Dendrogram:**
+   - A dendrogram is a tree-like diagram that represents the arrangement of the clusters produced by hierarchical clustering algorithms.
+   - It illustrates the order in which clusters are merged or split during the hierarchical clustering process.
+   - The length of the vertical lines in a dendrogram represents the distance or dissimilarity between clusters.
+
+7. **SSE (Sum of Squared Errors):**
+   - SSE is a measure of the total within-cluster variation in a clustering solution.
+   - In the k-means algorithm, SSE is minimized by adjusting the cluster centroids to reduce the distance between data points and their assigned centroids.
+
+8. **k-means Procedure:**
+   - Initialize cluster centroids randomly.
+   - Assign each data point to the nearest centroid.
+   - Update cluster centroids based on the mean of the data points assigned to each cluster.
+   - Repeat the assignment and update steps until convergence (when centroids no longer change significantly or a maximum number of iterations is reached).
+
+9. **Single Link and Complete Link in Hierarchical Clustering:**
+   - Single link: Defines the distance between two clusters as the shortest distance between any two points in the two clusters.
+   - Complete link: Defines the distance between two clusters as the longest distance between any two points in the two clusters.
+
+10. **Apriori Concept in Basket Analysis:**
+    - The apriori concept is used to reduce measurement overhead in basket analysis by generating association rules based on the frequency of itemsets in transactions.
+    - For example, in retail, if customers frequently purchase bread and milk together, the apriori algorithm can identify this association without examining all possible combinations of items, thereby reducing computational overhead.

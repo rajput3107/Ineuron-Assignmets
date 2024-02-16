@@ -1,0 +1,45 @@
+1. **Definition of clustering:** Clustering is an unsupervised learning technique used to group similar data points together based on certain characteristics or features. The goal of clustering is to partition a dataset into subsets, or clusters, where data points within the same cluster are more similar to each other than to those in other clusters. 
+
+   **Clustering algorithms:**
+   - K-Means clustering
+   - Hierarchical clustering (Agglomerative and Divisive)
+   - DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
+   - Gaussian Mixture Models (GMM)
+   - Mean Shift clustering
+
+2. **Popular clustering algorithm applications:**
+   - Customer segmentation in marketing
+   - Image segmentation in computer vision
+   - Document clustering in natural language processing
+   - Anomaly detection in cybersecurity
+   - Recommendation systems in e-commerce
+
+3. **Strategies for selecting the appropriate number of clusters in K-Means:**
+   - Elbow method: Plot the within-cluster sum of squares (WCSS) against the number of clusters. The "elbow" point in the plot represents the optimal number of clusters where adding more clusters does not significantly reduce the WCSS.
+   - Silhouette score: Calculate the silhouette score for different numbers of clusters. The silhouette score measures how close each point in one cluster is to the points in the neighboring clusters. Higher silhouette scores indicate better-defined clusters.
+
+4. **Mark propagation:** Mark propagation is a semi-supervised learning technique that assigns labels to unlabeled data points based on the labels of nearby data points. It works by propagating the known labels through the data graph or network. Mark propagation can be used for tasks like community detection in social networks or image segmentation.
+
+5. **Clustering algorithms for large datasets:**
+   - Mini-batch K-Means: It is a variation of K-Means that updates cluster centroids using small random subsets of the dataset, making it suitable for large datasets.
+   - DBSCAN: DBSCAN efficiently identifies clusters of varying shapes and sizes in large datasets without requiring the number of clusters as input.
+
+   **Clustering algorithms for high-density areas:**
+   - DBSCAN: DBSCAN identifies clusters based on dense regions of data points.
+   - Mean Shift: Mean Shift is a clustering algorithm that moves data points towards the mode of the data distribution, effectively identifying high-density areas.
+
+6. **Advantages of constructive learning:**
+   - Constructive learning can be advantageous in scenarios where the dataset is initially small or incomplete, and new data points are continuously added over time.
+   - It allows the model to adapt and grow as more data becomes available.
+
+7. **Difference between anomaly and novelty detection:**
+   - Anomaly detection identifies instances that deviate significantly from the norm or expected behavior in the dataset.
+   - Novelty detection identifies instances that are significantly different from the training data, often indicating novel or previously unseen patterns.
+
+8. **Gaussian mixture model (GMM):**
+   - GMM is a probabilistic model that represents the distribution of data as a mixture of multiple Gaussian distributions.
+   - It works by estimating the parameters (mean and covariance) of each Gaussian component to fit the data distribution.
+
+9. **Techniques for determining the correct number of clusters in GMM:**
+   - Bayesian Information Criterion (BIC): BIC measures the trade-off between the goodness of fit and the complexity of the model. The model with the lowest BIC is preferred.
+   - Akaike Information Criterion (AIC): Similar to BIC, AIC is used to select the model that best explains the data while penalizing complex models.

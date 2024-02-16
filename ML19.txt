@@ -1,0 +1,39 @@
+1. **Clustering with k-means:**
+   a) For the given sets of centroids:
+      - Set 1: Centroids (15, 32) and (12, 30)
+      - Set 2: Data points: 5, 10, 15, 20, 25, 30, 35
+   b) Calculate SSE for each set of centroids.
+
+2. **Market Basket Analysis and Association Analysis:**
+   - Market Basket Analysis explores relationships between items purchased together by customers.
+   - It employs association analysis concepts like support, confidence, and lift to identify frequent itemsets and generate association rules.
+
+3. **Example of Apriori Algorithm:**
+   - Suppose we have transaction data from a grocery store.
+   - Apriori algorithm helps identify itemsets (e.g., {milk, bread}) that frequently occur together.
+   - It then generates association rules (e.g., {milk} ➔ {bread}) based on support and confidence thresholds.
+
+4. **Distance Measurement in Hierarchical Clustering:**
+   - Distance between clusters can be measured using various metrics like Euclidean distance, Manhattan distance, etc.
+   - Iteration ends when the clusters are merged or split based on a predefined criterion like distance threshold or number of clusters desired.
+
+5. **Recomputing Cluster Centroids in k-means:**
+   - Recompute centroids by taking the mean of the data points assigned to each cluster.
+
+6. **Determining the Number of Clusters:**
+   - Elbow method: Plot SSE against the number of clusters and look for an "elbow" point where the rate of SSE reduction decreases.
+   - Silhouette method: Measure how similar an object is to its cluster compared to other clusters.
+
+7. **Advantages and Disadvantages of k-means:**
+   - Advantages: Simple, scalable, works well with large datasets.
+   - Disadvantages: Sensitive to initial centroids, may converge to local optima, requires predefined k.
+
+8. **Diagram for Clustering:**
+   - Diagram would illustrate data points grouped into clusters based on similarity or proximity.
+
+9. **Second Iteration of K-means:**
+   - Compute new centroids based on the data points assigned to each cluster in the first iteration.
+   - Recalculate SSE for the new clusters.
+
+10. **Diagram for Defect Clustering:**
+    - A visual representation showing clusters of defects identified by the k-means algorithm. Each cluster represents a group of related defects, and new defects are assigned to the nearest cluster based on similarity.

@@ -1,0 +1,98 @@
+Let's address each question step by step:
+
+### Question 1:
+
+Given X is a discrete random variable with the following PMF:
+
+\[ P(X) = 
+\begin{cases} 
+0.2 & \text{if } X = 0.2 \\
+0.3 & \text{if } X = 0.5 \\
+0.5 & \text{if } X = 0.8 \\
+0 & \text{otherwise}
+\end{cases}
+\]
+
+1. **Range of \( X \) (denoted as \( R_X \)):**
+   The range of \( X \) is the set of all possible values that \( X \) can take, which in this case is \( R_X = \{0.2, 0.5, 0.8\} \).
+
+2. **\( P(X \leq 0.5) \):**
+   \[ P(X \leq 0.5) = P(X = 0.2) + P(X = 0.5) = 0.2 + 0.3 = 0.5 \]
+
+3. **\( P(0.25 < X < 0.75) \):**
+   Since \( 0.25 < X < 0.75 \) only includes \( X = 0.5 \), \( P(0.25 < X < 0.75) = P(X = 0.5) = 0.3 \).
+
+4. **\( P(X = 0.2|X < 0.6) \):**
+   Given \( X < 0.6 \), the only relevant value is \( X = 0.5 \), so \( P(X = 0.2|X < 0.6) = 0 \).
+
+### Question 2:
+
+Given two dice are rolled, and we observe two numbers \( X \) and \( Y \):
+
+1. **Ranges and PMFs of \( X \) and \( Y \):**
+   \( R_X = R_Y = \{1, 2, 3, 4, 5, 6\} \) since both dice have 6 sides, and they are fair, so \( P(X = x) = P(Y = y) = \frac{1}{6} \) for \( x, y \) in \( R_X \) and \( R_Y \).
+
+2. **\( P(X = 2, Y = 6) \):**
+   Since the outcomes of rolling two dice are independent, \( P(X = 2, Y = 6) = P(X = 2) \times P(Y = 6) = \frac{1}{6} \times \frac{1}{6} = \frac{1}{36} \).
+
+3. **\( P(X > 3|Y = 2) \):**
+   Since \( Y = 2 \), the possible outcomes for \( X \) are \( \{1, 2\} \). Thus, \( P(X > 3|Y = 2) = 0 \) since no outcome of \( X \) satisfies \( X > 3 \) given \( Y = 2 \).
+
+4. **Range and PMF of \( Z = X + Y \):**
+   \( Z \) can take values from 2 to 12. The PMF of \( Z \) depends on the sum of the individual PMFs of \( X \) and \( Y \) for each value of \( Z \).
+
+5. **\( P(X = 4|Z = 8) \):**
+   To find \( P(X = 4|Z = 8) \), we need to consider all possible pairs \( (X, Y) \) that sum up to 8 and find the probability of \( X \) being 4.
+
+### Question 3:
+
+In an exam with 20 multiple-choice questions:
+
+- For the known questions, the student's score follows a binomial distribution.
+- For the unknown questions, the student's score follows a hypergeometric distribution.
+
+We need to calculate the PMF of \( X \) (the total score) and then find \( P(X > 15) \).
+
+### Question 4:
+
+Given the number of students arriving at a college between 10 am and 11:30 am follows a Poisson distribution with \( \lambda = 10 \) per hour. We need to find \( P(10 < Y \leq 15) \).
+
+### Question 5:
+
+Given two independent random variables \( X \) and \( Y \) following Poisson distributions, we need to find the PMF of their sum \( Z = X + Y \).
+
+### Question 6:
+
+Given a discrete random variable \( X \), we define a new random variable \( Y = (X + 1)^2 \). We need to find the range and PMF of \( Y \).
+
+### Question 7:
+
+Given \( X \) is a continuous random variable with a specified PDF, we need to find \( E(X) \), \( \text{Var}(X) \), and \( P(X \geq c) \).
+
+### Question 8:
+
+Given \( X \) is a continuous random variable with a specified PDF, we need to find the PDF of \( Y = \sin(X) \).
+
+### Question 9:
+
+Given \( X \) is a continuous random variable with a specified CDF, we need to determine the type of random variable \( X \), find its PDF, calculate \( E(e^X) \), and find \( P(X = 0|X \leq 0.5) \).
+
+### Question 10:
+
+Given joint PMFs of \( X \) and \( Y \), we need to find probabilities related to \( X \) and \( Y \), determine their marginal PMFs, and investigate if they are independent.
+
+### Question 11:
+
+Given a scenario of selecting shirts from a box without replacement, we need to find the joint PMF of \( X \) and \( Y \).
+
+### Question 12:
+
+Given joint PDFs of two continuous random variables, we need to find marginal PDFs, determine independence, find conditional PDFs, calculate conditional expectations, and find conditional variances.
+
+### Question 13:
+
+Given a scenario of men's weights on a ship, we need to find the probability that the total weight exceeds a certain threshold.
+
+### Question 14:
+
+Given independent and identically distributed random variables, we need to apply the central limit theorem to estimate a probability.

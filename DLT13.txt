@@ -1,0 +1,53 @@
+1. **Why is it generally preferable to use a Logistic Regression classifier rather than a classical Perceptron? How can you tweak a Perceptron to make it equivalent to a Logistic Regression classifier?**
+   - Logistic Regression classifiers tend to perform better than classical Perceptrons because they output class probabilities instead of hard binary predictions. Logistic Regression uses the logistic (sigmoid) activation function, which allows it to output probabilities that can be interpreted as the likelihood of a sample belonging to a particular class.
+   - To make a Perceptron equivalent to a Logistic Regression classifier, you can:
+     - Replace the step function (used in Perceptrons) with the logistic (sigmoid) activation function.
+     - Use gradient descent with the cross-entropy loss function for optimization, which is more suitable for probabilistic classifiers like Logistic Regression.
+
+2. **Why was the logistic activation function a key ingredient in training the first MLPs?**
+   - The logistic (sigmoid) activation function was a key ingredient in training the first MLPs because it allowed for non-linear transformations between layers, enabling the network to learn complex patterns and relationships in the data. Additionally, the logistic function produces smooth gradients, making it amenable to gradient-based optimization algorithms like backpropagation.
+
+3. **Name three popular activation functions. Can you draw them?**
+   - Three popular activation functions are:
+     - ReLU (Rectified Linear Unit)
+     - Sigmoid (Logistic)
+     - Tanh (Hyperbolic Tangent)
+   - Here's how they look graphically:
+
+     ![Activation Functions](activation_functions.png)
+
+4. **Suppose you have an MLP composed of one input layer with 10 passthrough neurons, followed by one hidden layer with 50 artificial neurons, and finally one output layer with 3 artificial neurons. All artificial neurons use the ReLU activation function.**
+   - Shape of the input matrix \( X \): \( (m, 10) \) where \( m \) is the number of instances.
+   - Shape of the hidden layer's weight matrix \( W_h \): \( (10, 50) \)
+   - Shape of the hidden layer's bias vector \( b_h \): \( (1, 50) \)
+   - Shape of the output layer's weight matrix \( W_o \): \( (50, 3) \)
+   - Shape of the output layer's bias vector \( b_o \): \( (1, 3) \)
+   - Shape of the network's output matrix \( Y \): \( (m, 3) \)
+   - Equation for computing the network's output matrix \( Y \):
+     \[ Y = \text{ReLU}(X \cdot W_h + b_h) \cdot W_o + b_o \]
+
+5. **How many neurons do you need in the output layer if you want to classify email into spam or ham? What activation function should you use in the output layer? If instead you want to tackle MNIST, how many neurons do you need in the output layer, using what activation function?**
+   - For classifying email into spam or ham, you need 2 neurons in the output layer with the sigmoid activation function.
+   - For tackling MNIST, you need 10 neurons in the output layer (one for each digit) with the softmax activation function.
+
+6. **What is backpropagation and how does it work? What is the difference between backpropagation and reverse-mode autodiff?**
+   - Backpropagation is an algorithm used to train neural networks by efficiently computing the gradients of the loss function with respect to the network's parameters. It works by propagating the error backwards from the output layer to the input layer, updating the weights of the network to minimize the error.
+   - Reverse-mode autodiff is a method for computing gradients in computational graphs by traversing the graph in reverse order, calculating the gradients of the loss function with respect to each intermediate node. Backpropagation is a specific application of reverse-mode autodiff in neural networks.
+
+7. **Can you list all the hyperparameters you can tweak in an MLP? If the MLP overfits the training data, how could you tweak these hyperparameters to try to solve the problem?**
+   - Hyperparameters in an MLP that can be tweaked include:
+     - Learning rate
+     - Number of hidden layers
+     - Number of neurons in each hidden layer
+     - Activation functions
+     - Regularization parameters (e.g., L1, L2 regularization)
+     - Dropout rate
+     - Batch size
+     - Optimization algorithm (e.g., SGD, Adam)
+   - If the MLP overfits the training data, you can try the following:
+     - Increase dropout rate to reduce overfitting.
+     - Decrease the number of neurons in hidden layers.
+     - Introduce L1 or L2 regularization.
+     - Use early stopping to prevent overfitting by monitoring the performance on a validation set and stopping training when the performance starts to degrade.
+
+8. **Train a deep MLP on the MNIST dataset and see if you can get over 98% precision. Try adding all the bells and whistles (i.e., save checkpoints, restore the last checkpoint in case of an interruption, add summaries

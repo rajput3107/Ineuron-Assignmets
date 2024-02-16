@@ -1,0 +1,23 @@
+Sure, here are the explanations:
+
+1. **Activation Functions**:
+   - **Sigmoid**: It squashes the input values between 0 and 1, making it useful for binary classification tasks. However, it suffers from the vanishing gradient problem.
+   - **Tanh (Hyperbolic Tangent)**: Similar to the sigmoid function, but squashes the input values between -1 and 1. It is zero-centered, which helps with gradient-based optimization methods.
+   - **ReLU (Rectified Linear Unit)**: It outputs the input directly if it is positive, otherwise, it outputs zero. It helps alleviate the vanishing gradient problem and is computationally efficient.
+   - **ELU (Exponential Linear Unit)**: Similar to ReLU, but instead of zero for negative input, it uses a slightly negative value. This helps with the vanishing gradient problem and can lead to faster convergence.
+   - **LeakyReLU**: It is similar to ReLU but allows a small, non-zero gradient when the input is negative. This helps prevent "dying" ReLU units.
+   - **Swish**: It is a smooth, nonlinear activation function that tends to work well in deep neural networks. It is a self-gated function that can perform better than ReLU in some cases.
+
+2. **Optimizer Learning Rate**: Increasing the learning rate can make the optimizer converge faster but may cause instability and overshooting of the minimum. Decreasing the learning rate can lead to slower convergence but may result in a more stable training process and better convergence to the global minimum.
+
+3. **Number of Internal Hidden Neurons**: Increasing the number of internal hidden neurons increases the capacity of the model to learn complex patterns in the data. However, it also increases the risk of overfitting, especially if the model is too complex relative to the amount of available training data.
+
+4. **Batch Size**: Increasing the size of batch computation can lead to faster training as more samples are processed in parallel. However, larger batch sizes require more memory and may result in a less noisy estimate of the gradient, which can affect the generalization performance of the model.
+
+5. **Regularization**: Regularization techniques like L1/L2 regularization, dropout, and batch normalization are used to prevent overfitting by adding penalties to the loss function or introducing noise during training. This helps the model generalize better to unseen data by discouraging overly complex models that fit the training data too closely.
+
+6. **Loss and Cost Functions**: Loss functions measure the error between the predicted output of the model and the actual target labels for a single training example. Cost functions aggregate the losses across all training examples and are used to optimize the model parameters during training.
+
+7. **Underfitting**: Underfitting occurs when a model is too simple to capture the underlying structure of the data. It results in high bias and low variance, leading to poor performance on both the training and test datasets.
+
+8. **Dropout**: Dropout is a regularization technique used to prevent overfitting by randomly dropping (setting to zero) a fraction of the neurons in a layer during training. This helps prevent co-adaptation of neurons and encourages the network to learn more robust features.

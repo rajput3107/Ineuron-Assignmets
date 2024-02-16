@@ -1,0 +1,27 @@
+1. Initializing all weights to the same value using He initialization is not recommended. He initialization initializes the weights randomly from a normal distribution with a mean of 0 and a standard deviation based on the number of input neurons to the layer. This technique helps prevent the gradients from vanishing or exploding during training by providing a suitable variance for the initial weights.
+
+2. It is generally acceptable to initialize bias terms to 0. Bias terms are additional parameters added to each neuron that allow the neural network to fit the data better by shifting the activation function. Initializing biases to 0 simplifies the initialization process and does not introduce significant issues during training.
+
+3. Three advantages of the SELU activation function over ReLU:
+   - SELU allows the neural network to self-normalize, ensuring that the activations and gradients do not vanish or explode, leading to more stable training.
+   - SELU maintains a mean activation close to 0 and a standard deviation close to 1, which helps alleviate the vanishing/exploding gradient problem.
+   - SELU can lead to better performance compared to ReLU in deeper neural networks without the need for additional techniques like batch normalization.
+
+4. Cases for using each activation function:
+   - SELU: Useful for deep neural networks where self-normalization is desired.
+   - Leaky ReLU and its variants: Suitable for preventing dying ReLU problem and for models where ReLU may cause too many dead neurons.
+   - ReLU: Widely used as a default choice for hidden layers due to its simplicity and effectiveness in addressing the vanishing gradient problem.
+   - Tanh: Suitable for hidden layers in neural networks where the output is in the range [-1, 1].
+   - Logistic (Sigmoid): Suitable for binary classification problems where the output needs to be in the range [0, 1].
+   - Softmax: Typically used in the output layer of multi-class classification problems to obtain class probabilities that sum up to 1.
+
+5. Setting the momentum hyperparameter too close to 1 (e.g., 0.99999) when using an SGD optimizer can result in the optimizer overshooting the minimum point of the loss function and oscillating around it. This can lead to slow convergence or instability during training.
+
+6. Three ways to produce a sparse model:
+   - L1 regularization: Adds a penalty term to the loss function based on the absolute values of the weights, encouraging many weights to be close to zero.
+   - Dropout: Randomly sets a fraction of input units to zero during training, forcing the model to learn redundant representations and become more robust.
+   - Pruning: Identifies and removes connections or weights with little impact on the model's performance, resulting in a sparser neural network.
+
+7. Dropout does not slow down training significantly, as it only applies during training by randomly dropping neurons. During inference, dropout is not applied, so it does not slow down making predictions on new instances. MC Dropout, or Monte Carlo Dropout, involves making multiple predictions with dropout turned on and averaging the results to obtain uncertainty estimates. While it may increase inference time, the slowdown is typically manageable.
+
+8. Training a deep neural network on the CIFAR10 dataset involves several steps, including building the model architecture, selecting appropriate optimization algorithms and activation functions, experimenting with regularization techniques, and comparing different configurations to improve model performance and convergence.

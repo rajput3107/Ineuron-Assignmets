@@ -1,0 +1,15 @@
+1. The estimated depth of a Decision Tree trained on an unrestricted one million instance training set could be quite deep, especially if there are many features and the data is complex. However, it's hard to give an exact estimate without considering other factors such as the complexity of the data, the presence of noise, and the hyperparameters set for the tree.
+
+2. The Gini impurity of a node is typically lower than that of its parent. This is because the splitting criterion in decision trees aims to decrease impurity at each node. However, it's not guaranteed that the Gini impurity will always decrease with each split, but it is generally the goal during the tree-building process.
+
+3. Yes, reducing the max depth of a Decision Tree can be a good idea if the tree is overfitting the training set. Limiting the depth of the tree helps prevent it from capturing noise and specific details of the training data, which may not generalize well to unseen data.
+
+4. Scaling the input features is generally not necessary for Decision Trees. Decision Trees are not sensitive to the scale of the features because they make binary decisions based on feature thresholds. However, scaling might be useful if the algorithm used in conjunction with Decision Trees (like gradient boosting) is sensitive to feature scales.
+
+5. Training another Decision Tree on a training set of 10 million instances would likely take considerably longer than training a Decision Tree on a training set with 1 million instances. The exact time would depend on various factors such as the complexity of the data, the hardware used, and the implementation details of the algorithm.
+
+6. Setting presort=True might speed up training if your training set has 100,000 instances, but it depends on the specific dataset and hardware configuration. Presorting the data can be computationally expensive, especially for large datasets, so it's worth experimenting with different settings to see if it improves training speed.
+
+7. Follow the provided steps to train and fine-tune a Decision Tree for the moons dataset as outlined.
+
+8. Follow the provided steps to grow a forest as outlined. Building a forest involves training multiple Decision Trees on different subsets of the training data and aggregating their predictions to make final predictions. This ensemble approach often leads to better generalization performance compared to a single Decision Tree.

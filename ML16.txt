@@ -1,0 +1,31 @@
+1. In a linear equation, the dependent variable is the one whose value depends on the value of the independent variable. The independent variable is the one that stands alone and is not affected by other variables.
+
+2. Simple linear regression is a statistical method used to model the relationship between a single independent variable and a dependent variable. It assumes a linear relationship between the variables. For example, predicting house prices based on the square footage of the house is a simple linear regression problem.
+
+3. In a linear regression equation \( y = mx + b \), the slope \( m \) represents the rate of change of the dependent variable \( y \) with respect to changes in the independent variable \( x \). It indicates the steepness of the line.
+
+4. The slope of a line passing through the points (3, 2) and (2, 2) is calculated as the change in \( y \) divided by the change in \( x \). Therefore, the slope is \((2 - 2) / (3 - 2) = 0 / 1 = 0\).
+
+5. In linear regression, a positive slope indicates that as the independent variable increases, the dependent variable also increases. This implies a positive correlation between the variables.
+
+6. In linear regression, a negative slope indicates that as the independent variable increases, the dependent variable decreases. This implies a negative correlation between the variables.
+
+7. Multiple linear regression is an extension of simple linear regression where more than one independent variable is used to predict the dependent variable. It models the relationship between the dependent variable and two or more independent variables by fitting a linear equation to observed data points.
+
+8. In multiple linear regression, the sum of squares due to error (SSE) represents the difference between the actual values and the predicted values of the dependent variable. It quantifies the overall error in the model's predictions.
+
+9. In multiple linear regression, the sum of squares due to regression (SSR) represents the difference between the predicted values and the mean of the dependent variable. It quantifies the portion of the total variation in the dependent variable that is explained by the independent variables.
+
+10. Multicollinearity refers to the presence of high correlations between two or more independent variables in a regression model. It can lead to unreliable estimates of the regression coefficients and affects the interpretation of the model.
+
+11. Heteroskedasticity occurs when the variability of the residuals (the difference between observed and predicted values) is not constant across all levels of the independent variables. It violates one of the assumptions of linear regression, which is homoscedasticity.
+
+12. Ridge regression is a regularization technique used in linear regression to mitigate multicollinearity and overfitting by adding a penalty term to the regression equation. It shrinks the coefficients of the regression model towards zero, reducing the variance of the estimates.
+
+13. Lasso regression is another regularization technique used in linear regression that penalizes the absolute size of the coefficients. It tends to produce sparse models by forcing some coefficients to be exactly zero, effectively performing variable selection.
+
+14. Polynomial regression is a form of regression analysis in which the relationship between the independent variable and the dependent variable is modeled as an nth degree polynomial. It can capture nonlinear relationships between the variables.
+
+15. Basis functions are functions used to transform the input variables in polynomial regression or other nonlinear regression techniques. They allow the model to capture nonlinear relationships by representing the data in a higher-dimensional space.
+
+16. Logistic regression is a statistical method used for modeling the probability of a binary outcome based on one or more independent variables. It is commonly used for classification tasks, where the dependent variable is categorical. Logistic regression uses the logistic function to model the probability of the outcome.

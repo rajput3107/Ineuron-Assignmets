@@ -1,0 +1,40 @@
+1. **Prior Probability:**
+   - Prior probability refers to the initial belief about the likelihood of an event occurring before any evidence or data is taken into account.
+   - Example: In a medical diagnosis scenario, the prior probability of a person having a certain disease might be based on historical data or general population statistics before any specific diagnostic tests are conducted.
+
+2. **Posterior Probability:**
+   - Posterior probability refers to the updated probability of an event occurring after taking into account new evidence or data.
+   - Example: After conducting diagnostic tests, the posterior probability of a person having a disease is updated based on the test results and prior probabilities.
+
+3. **Likelihood Probability:**
+   - Likelihood probability represents the probability of observing the evidence given a specific hypothesis or model.
+   - Example: In a coin-tossing experiment, the likelihood probability of obtaining heads given that the coin is fair is 0.5.
+
+4. **Naïve Bayes Classifier:**
+   - The Naïve Bayes classifier is a probabilistic machine learning model based on Bayes' theorem and the assumption of independence among features.
+   - It is named "naïve" because it assumes that all features are independent of each other, which may not always hold true in real-world data.
+
+5. **Optimal Bayes Classifier:**
+   - The Optimal Bayes classifier is a theoretical classifier that assigns the most probable class label to a given instance based on Bayes' theorem.
+   - It is optimal in the sense that it minimizes the misclassification rate when the true probability distributions of the classes are known.
+
+6. **Features of Bayesian Learning Methods:**
+   - Bayesian learning methods provide a principled framework for incorporating prior knowledge.
+   - They allow for the updating of beliefs based on observed evidence through Bayes' theorem.
+
+7. **Consistent Learners:**
+   - Consistent learners are machine learning algorithms that converge to the true target function as the amount of training data approaches infinity.
+   - In other words, consistent learners produce increasingly accurate predictions as more data becomes available.
+
+8. **Strengths of Bayes Classifier:**
+   - Bayes classifiers are simple and easy to implement.
+   - They can handle both numerical and categorical data effectively.
+
+9. **Weaknesses of Bayes Classifier:**
+   - Bayes classifiers rely heavily on the assumption of feature independence, which may not hold true in all real-world datasets.
+   - They can be sensitive to irrelevant features or noisy data.
+
+10. **Usage of Naïve Bayes Classifier:**
+    1. **Text Classification:** Naïve Bayes classifiers are widely used for text classification tasks such as sentiment analysis, spam detection, and document categorization.
+    2. **Spam Filtering:** In email spam filtering, Naïve Bayes classifiers can classify incoming emails as spam or non-spam based on features extracted from the email content.
+    3. **Market Sentiment Analysis:** Naïve Bayes classifiers can be applied to analyze market sentiment by categorizing news articles, social media posts, or financial reports into positive, negative, or neutral sentiments based on textual features.

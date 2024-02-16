@@ -1,0 +1,37 @@
+1. Basic linear regression is a statistical method used to model the relationship between two variables, typically denoted as \( x \) and \( y \). It assumes a linear relationship between the independent variable \( x \) and the dependent variable \( y \). The equation of a simple linear regression model is represented as \( y = mx + b \), where \( m \) is the slope of the line and \( b \) is the y-intercept. The slope \( m \) represents the rate of change of \( y \) with respect to changes in \( x \), while the y-intercept \( b \) represents the value of \( y \) when \( x = 0 \).
+
+2. In a graph, the rise refers to the vertical change between two points, while the run refers to the horizontal change between the same points. The slope of a line represents the ratio of the rise to the run, indicating how steep the line is. It is calculated as the change in \( y \) divided by the change in \( x \).
+
+3. A linear positive slope graph depicts a line that rises from left to right, indicating a positive correlation between the variables. A linear negative slope graph depicts a line that falls from left to right, indicating a negative correlation between the variables. The slope of the line determines its steepness, with a steeper slope indicating a stronger correlation.
+
+4. In curve linear negative slope, the graph exhibits a downward curvature from left to right, indicating a negative correlation that becomes weaker as \( x \) increases. In curve linear positive slope, the graph exhibits an upward curvature from left to right, indicating a positive correlation that becomes stronger as \( x \) increases.
+
+5. The maximum point of a curve represents the highest value of the dependent variable \( y \) within the given range of \( x \), while the low point represents the lowest value of \( y \) within the same range.
+
+6. In ordinary least squares (OLS) regression, the coefficients \( a \) and \( b \) are estimated to minimize the sum of the squared differences between the observed values of \( y \) and the values predicted by the regression line. The formula for \( a \) and \( b \) in simple linear regression is derived using calculus to optimize this objective.
+
+7. The OLS algorithm involves the following steps:
+   a. Calculate the means of the independent and dependent variables.
+   b. Calculate the deviations of each data point from the mean.
+   c. Compute the product of the deviations.
+   d. Calculate the slope \( b \) as the ratio of the sum of the product deviations to the sum of the squared deviations of the independent variable.
+   e. Calculate the y-intercept \( a \) using the mean of the dependent variable and the slope.
+   f. Construct the regression line \( y = ax + b \).
+
+8. The regression standard error is a measure of the accuracy of the regression model in predicting the dependent variable. It represents the average deviation of the observed values from the predicted values of the dependent variable. A graph illustrating the regression standard error would show the dispersion of the data points around the regression line.
+
+9. An example of multiple linear regression could involve predicting house prices based on multiple factors such as square footage, number of bedrooms, number of bathrooms, and location.
+
+10. Regression analysis assumptions include linearity, independence of errors, homoscedasticity (constant variance of errors), and normality of errors. The BLUE principle (Best Linear Unbiased Estimators) states that the coefficients estimated by the regression model should be unbiased and have the minimum variance among all unbiased linear estimators.
+
+11. Two major issues with regression analysis include multicollinearity, where independent variables are highly correlated, and heteroscedasticity, where the variance of errors is not constant across all levels of the independent variables.
+
+12. The accuracy of the linear regression model can be improved by addressing issues such as multicollinearity, heteroscedasticity, and outliers, selecting relevant variables, and transforming variables to meet the assumptions of the regression model.
+
+13. Polynomial regression is a form of regression analysis where the relationship between the independent variable and the dependent variable is modeled as an nth degree polynomial. It can capture nonlinear relationships between the variables and is useful when the relationship is not linear.
+
+14. Logistic regression is a statistical method used for modeling the probability of a binary outcome based on one or more independent variables. It is commonly used for binary classification tasks and estimates the probability of the dependent variable belonging to a particular category.
+
+15. The logistic regression assumptions include linearity of the logit, independence of observations, absence of multicollinearity, and a large sample size. These assumptions ensure the reliability of the estimated coefficients and the validity of the model.
+
+16. Maximum likelihood estimation (MLE) is a method used to estimate the parameters of a statistical model by maximizing the likelihood function. In logistic regression, MLE is used to estimate the coefficients of the model that maximize the likelihood of observing the given data under the assumed model.

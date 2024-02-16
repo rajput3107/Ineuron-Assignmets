@@ -1,0 +1,40 @@
+1. Advantages of CNN over fully connected DNN for image classification:
+   - CNNs exploit spatial locality and translational invariance present in images through convolutional and pooling layers.
+   - Parameter sharing reduces the number of parameters and enhances model generalization.
+   - CNNs automatically learn hierarchical features from raw pixel values, reducing the need for manual feature engineering.
+   - CNN architectures like VGG, ResNet, and DenseNet have demonstrated state-of-the-art performance on image classification tasks.
+
+2. Total number of parameters in the CNN:
+   - The number of parameters in each convolutional layer is calculated as (kernel_height * kernel_width * input_channels + 1) * output_channels.
+   - For the first convolutional layer: (3 * 3 * 3 + 1) * 100 = 2800 parameters.
+   - For the second convolutional layer: (3 * 3 * 100 + 1) * 200 = 180200 parameters.
+   - For the third convolutional layer: (3 * 3 * 200 + 1) * 400 = 720400 parameters.
+   - The total number of parameters in the CNN is 903400.
+   - For prediction on a single instance: 903400 * 32 bits = 28.32 MB.
+   - For training on a mini-batch of 50 images: 28.32 MB * 50 = 1.416 GB.
+
+3. Solutions to GPU memory issues during training:
+   - Reduce batch size or use mixed precision training to reduce memory consumption.
+   - Limit the size of the model architecture or use model pruning techniques.
+   - Use a GPU with higher memory capacity or distribute training across multiple GPUs.
+   - Perform gradient checkpointing to reduce memory usage during backpropagation.
+   - Use data parallelism or model parallelism to split the model across multiple GPUs.
+
+4. Max pooling layers downsample feature maps, reducing spatial dimensions while retaining important features. This helps to reduce computational complexity and the risk of overfitting, making the network more robust and efficient.
+
+5. Local response normalization layers are used to normalize activation responses across feature maps. They can enhance contrast and improve generalization by encouraging competition between nearby features, but they are less commonly used in modern architectures due to the introduction of batch normalization layers.
+
+6. Innovations in various CNN architectures:
+   - AlexNet: Introduced ReLU activation functions, dropout regularization, and GPU acceleration.
+   - GoogLeNet: Utilized inception modules with parallel convolutional pathways to capture features at different scales.
+   - ResNet: Introduced residual connections to address the vanishing gradient problem and enable training of very deep networks.
+   - SENet: Incorporated squeeze-and-excitation blocks to adaptively recalibrate channel-wise feature responses.
+   - Xception: Utilized depthwise separable convolutions to reduce computational complexity while maintaining expressive power.
+
+7. A fully convolutional network (FCN) is a type of CNN designed for dense prediction tasks like semantic segmentation. Dense layers in traditional CNNs can be converted to convolutional layers by replacing the fully connected layers with convolutional layers having the same receptive field size.
+
+8. The main technical difficulty of semantic segmentation is accurately delineating object boundaries and handling instances of overlapping or occluded objects within the same scene.
+
+9. Building a CNN from scratch for MNIST involves defining convolutional, pooling, and fully connected layers using a framework like TensorFlow or PyTorch, followed by training and evaluation on the MNIST dataset to achieve the highest possible accuracy.
+
+10. Using transfer learning for large image classification involves fine-tuning a pretrained model like VGG, ResNet, or Inception on a custom dataset containing at least 100 images per class. This process includes dataset preparation, model selection, preprocessing, data augmentation, and fine-tuning the model's parameters on the custom dataset to achieve better classification performance.

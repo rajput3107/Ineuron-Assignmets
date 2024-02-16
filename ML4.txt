@@ -1,0 +1,51 @@
+1. **Key Tasks in Working with Machine Learning Modeling:**
+   - Data Collection: Gathering relevant data for the problem at hand.
+   - Data Cleaning: Handling missing values, outliers, and inconsistencies in the dataset.
+   - Data Preprocessing: Transforming and preparing data for modeling, including normalization, scaling, and encoding categorical variables.
+   - Feature Engineering: Creating new features or transforming existing ones to improve model performance.
+   - Model Selection: Choosing appropriate algorithms and techniques for the problem domain.
+   - Model Training: Training the selected model using the prepared dataset.
+   - Model Evaluation: Assessing the performance of the trained model using appropriate evaluation metrics.
+   - Model Deployment: Integrating the trained model into production systems for real-world use.
+
+2. **Forms of Data Used in Machine Learning:**
+   - **Numeric Data:** Numeric data consists of numerical values and is used for quantitative analysis. Example: Temperature readings, stock prices.
+   - **Categorical Data:** Categorical data represents categories or labels and is used for qualitative analysis. Example: Gender (male, female), vehicle types (sedan, SUV).
+
+3. **Distinguishing:**
+   1. **Numeric vs. Categorical Attributes:**
+      - Numeric attributes are quantitative and represent measurable quantities.
+      - Categorical attributes are qualitative and represent categories or labels.
+   2. **Feature Selection vs. Dimensionality Reduction:**
+      - Feature selection involves selecting the most relevant features from the original dataset.
+      - Dimensionality reduction aims to reduce the number of features by transforming them into a lower-dimensional space while preserving essential information.
+
+4. **Quick Notes:**
+   - **Histogram:** A histogram is a graphical representation of the distribution of numerical data. It consists of bars whose heights represent the frequency or probability of occurrence of each value.
+   - **Scatter Plot:** A scatter plot is a two-dimensional plot that displays the relationship between two variables. It helps visualize patterns, correlations, and outliers in data.
+
+5. **Necessity of Investigating Data:**
+   Investigating data helps understand its characteristics, identify patterns, trends, and relationships, detect anomalies or outliers, and make informed decisions about preprocessing and modeling. The approach to exploring qualitative and quantitative data may differ, but both aim to gain insights and extract meaningful information.
+
+6. **Various Histogram Shapes and 'Bins':**
+   - Histogram shapes include:
+     - Normal distribution
+     - Skewed distribution (left-skewed or right-skewed)
+     - Bimodal distribution
+   - 'Bins' in a histogram refer to the intervals or ranges into which the data is divided for visualization and analysis.
+
+7. **Dealing with Data Outliers:**
+   Outliers can be handled by:
+   - Removing them if they are due to errors or anomalies.
+   - Transforming the data using techniques like winsorization or log transformation.
+   - Treating them separately or adjusting their impact on the model.
+
+8. **Central Inclination Measures and Variability:**
+   - Central inclination measures include mean, median, and mode, which represent the center or typical value of a dataset.
+   - Mean can vary significantly from median in certain datasets, especially in the presence of outliers or skewed distributions, as it is sensitive to extreme values, whereas median is more robust.
+
+9. **Scatter Plot for Investigating Bivariate Relationships:**
+   A scatter plot visualizes the relationship between two variables by displaying data points on a two-dimensional plane. It helps identify patterns, trends, correlations, and outliers in bivariate data. Outliers can be detected by observing data points that deviate significantly from the overall pattern of the plot.
+
+10. **Using Cross-Tabs to Determine Variable Relationships:**
+    Cross-tabs, or contingency tables, summarize the relationship between two categorical variables by showing the frequency or count of observations in each combination of categories. They help analyze associations, dependencies, and patterns between variables, facilitating insights into their relationships.

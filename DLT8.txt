@@ -1,0 +1,37 @@
+1. **Stateful RNN vs. Stateless RNN:**
+   - **Pros of stateful RNN:**
+     - Maintains state between batches, enabling learning across sequences.
+     - Suitable for scenarios where sequence continuity matters, such as time series forecasting.
+   - **Cons of stateful RNN:**
+     - Requires careful management of batch shapes and sequence lengths.
+     - Less flexible in handling variable-length sequences compared to stateless RNNs.
+
+2. **Encoder-Decoder RNNs vs. Plain Sequence-to-Sequence RNNs:**
+   - Encoder-Decoder RNNs allow for flexible handling of input and output sequence lengths.
+   - They enable the model to encode variable-length input sequences into a fixed-size context vector before decoding it into an output sequence.
+   - This architecture is well-suited for tasks like machine translation, where the input and output lengths can vary significantly.
+
+3. **Dealing with Variable-Length Sequences:**
+   - For variable-length input sequences, padding or masking techniques can be used to ensure uniform sequence lengths.
+   - For variable-length output sequences, techniques like dynamic sequence length calculation or using an end-of-sequence token can help identify the end of the output sequence.
+
+4. **Beam Search:**
+   - Beam search is a technique used in sequence generation tasks like machine translation or text generation.
+   - It maintains a list of the most promising partial sequences (beams) and expands them by considering the next most likely tokens.
+   - Beam search helps generate more diverse and contextually relevant sequences compared to greedy decoding.
+   - TensorFlow's `tf.compat.v1.nn.ctc_beam_search_decoder` can be used to implement beam search.
+
+5. **Attention Mechanism:**
+   - Attention mechanism allows models to focus on different parts of the input sequence when generating each output token.
+   - It assigns weights to input sequence elements dynamically, based on their relevance to the current decoding step.
+   - Attention helps improve model performance by capturing long-range dependencies and reducing information loss.
+
+6. **Most Important Layer in Transformer Architecture:**
+   - The self-attention layer (also known as the multi-head attention layer) is the most important layer in the Transformer architecture.
+   - It enables the model to capture global dependencies in the input sequence by attending to different positions with different attention heads simultaneously.
+   - Self-attention facilitates parallelization and improves the model's ability to capture long-range dependencies.
+
+7. **Sampled Softmax:**
+   - Sampled softmax is used in scenarios where the output vocabulary is large, making traditional softmax computation computationally expensive.
+   - It approximates the full softmax by sampling a subset of output classes and computing gradients only for those classes.
+   - Sampled softmax is useful in tasks like language modeling or large-vocabulary classification, where the softmax layer poses scalability challenges.

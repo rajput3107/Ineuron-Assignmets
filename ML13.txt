@@ -1,0 +1,39 @@
+1. **Example of Prior, Posterior, and Likelihood:**
+   - Suppose we are testing for a rare disease, and only 1 in 10,000 people have it. The prior probability of an individual having the disease \( P(D) \) is \( 0.0001 \).
+   - After conducting a diagnostic test, we find that 99% of those with the disease test positive (likelihood probability \( P(+|D) = 0.99 \)), and 1% of those without the disease test positive (likelihood probability \( P(+|\neg D) = 0.01 \)).
+   - Now, if an individual tests positive for the disease, we can use Bayes' theorem to update our belief. The posterior probability \( P(D|+) \) represents the probability of the individual having the disease given the positive test result.
+
+2. **Role of Bayes' Theorem in Concept Learning:**
+   - Bayes' theorem is central to the concept learning principle by providing a framework for updating beliefs based on evidence.
+   - In the context of machine learning, Bayes' theorem allows for probabilistic inference about the relationship between input features and target labels.
+
+3. **Example of Naïve Bayes Classifier in Real Life:**
+   - Email Spam Filtering: Naïve Bayes classifiers are commonly used for email spam detection. The classifier learns from a labeled dataset of spam and non-spam emails, extracting features such as word frequencies, and calculates the probability that a new email belongs to either class based on these features.
+
+4. **Using Naïve Bayes Classifier on Continuous Numeric Data:**
+   - Yes, the Naïve Bayes classifier can be used on continuous numeric data.
+   - For continuous data, probability density functions (PDFs) are used instead of discrete probabilities.
+   - One common approach is to assume that the continuous features follow a specific probability distribution, such as Gaussian (normal distribution), and estimate the parameters of the distribution from the training data.
+
+5. **Bayesian Belief Networks (BBNs):**
+   - Bayesian Belief Networks (BBNs) are probabilistic graphical models that represent the probabilistic relationships among a set of variables using a directed acyclic graph (DAG).
+   - BBNs work by encoding conditional dependencies between variables and allow for efficient probabilistic inference.
+   - They find applications in various fields such as healthcare (diagnosis and prognosis), finance (risk assessment), and natural language processing.
+
+6. **Passenger Screening System:**
+   - The probability of triggering an alarm given that an individual is an intruder \( P(A=1|I=1) = 0.98 \).
+   - The probability of triggering an alarm given that an individual is not an intruder \( P(A=1|I=0) = 0.001 \).
+   - The likelihood of an intruder in the passenger population \( P(I=1) = 0.00001 \).
+   - To find the chance that an alarm would be triggered when an individual is actually an intruder, we apply Bayes' theorem: \( P(I=1|A=1) \).
+
+7. **Antibiotic Resistance Test:**
+   - Given the false positive and false negative rates of the test, along with the prevalence of antibiotic resistance, we can use Bayes' theorem to calculate the likelihood that a person who tests positive is actually immune to the antibiotic.
+
+8. **Exam Problem Planning:**
+   - By using the given probabilities of getting each type of problem and the student's solved problems, we can compute the likelihood that the student can solve the exam problem and the likelihood that the problem was of form A.
+
+9. **Bank CCTV System:**
+   - Given the probabilities of customers entering the bank and the camera detecting movement, along with the false detection rate, we can compute the expected number of customers, fake photographs, missed photographs, and the likelihood that there is a customer if there is a photograph.
+
+10. **Conditional Probability Table for Won Toss:**
+    - Unfortunately, the details for creating the conditional probability table associated with the node "Won Toss" in the Bayesian Belief network for match winning prediction are not provided in the current context.

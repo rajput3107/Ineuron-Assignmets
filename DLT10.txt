@@ -1,0 +1,39 @@
+1. **SavedModel Contents and Inspection:**
+   - A SavedModel contains the model's architecture, weights, and computation graph along with the necessary metadata to run the model.
+   - You can inspect its content using TensorFlow's tools like `saved_model_cli`, which allows you to view signatures, inputs, outputs, and other metadata.
+
+2. **Using TensorFlow Serving:**
+   - TensorFlow Serving is used when you need to deploy machine learning models into production environments.
+   - Main Features:
+     - High-performance serving of TensorFlow models.
+     - Allows versioning and rollback of model versions.
+     - Provides monitoring, logging, and metrics for deployed models.
+   - Tools for deployment: Docker, Kubernetes, TensorFlow Serving APIs.
+
+3. **Deploying Across Multiple TF Serving Instances:**
+   - To deploy across multiple instances, you can set up a load balancer in front of the TF Serving instances.
+   - Requests are distributed among the instances to balance the load.
+
+4. **gRPC vs. REST API for TF Serving:**
+   - Use gRPC API for low-latency and high-throughput scenarios.
+   - gRPC is generally faster and more efficient than the REST API for model inference.
+   - REST API is simpler and more widely supported but may introduce more overhead.
+
+5. **Reducing Model Size with TFLite:**
+   - TFLite reduces model size by:
+     - Quantization: Reducing precision of weights and activations.
+     - Pruning: Removing less important weights.
+     - Model optimization: Removing redundant operations and nodes.
+
+6. **Quantization-Aware Training (QAT):**
+   - QAT simulates quantization during model training to ensure that the model performs well under reduced precision during inference.
+   - It helps in maintaining accuracy when deploying models to platforms with limited resources like mobile and embedded devices.
+
+7. **Model Parallelism vs. Data Parallelism:**
+   - Model parallelism involves splitting the model across multiple devices or servers.
+   - Data parallelism involves replicating the model across devices and splitting the data among them.
+   - Data parallelism is generally recommended as it's easier to implement and often leads to better scalability.
+
+8. **Distribution Strategies for Training Across Servers:**
+   - Strategies: MirroredStrategy, CentralStorageStrategy, MultiWorkerMirroredStrategy, ParameterServerStrategy.
+   - Choice depends on factors like model architecture, data distribution, hardware setup, and scalability requirements.

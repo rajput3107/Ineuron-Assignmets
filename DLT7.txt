@@ -1,0 +1,44 @@
+1. Applications for different types of RNNs:
+   - Sequence-to-sequence RNN: Machine translation, text summarization, speech recognition.
+   - Sequence-to-vector RNN: Sentiment analysis, document classification, video summarization.
+   - Vector-to-sequence RNN: Image captioning, generating music or text based on a given input vector.
+
+2. Input dimensions of an RNN layer:
+   - RNN layer input dimensions: (batch_size, timesteps, input_features).
+   - Each dimension represents:
+     - batch_size: Number of sequences in a batch.
+     - timesteps: Length of each sequence.
+     - input_features: Number of features at each timestep.
+
+   Output dimensions of an RNN layer:
+   - RNN layer output dimensions: (batch_size, timesteps, output_features).
+   - output_features: Number of features in the output sequence at each timestep.
+
+3. In a deep sequence-to-sequence RNN:
+   - RNN layers with `return_sequences=True` should be used for all hidden layers except the last one.
+   - The final RNN layer, representing the encoder or decoder, can have `return_sequences=False`.
+
+   For a sequence-to-vector RNN:
+   - The last RNN layer should typically have `return_sequences=False` to produce a final vector representation.
+
+4. For forecasting the next seven days from a daily univariate time series, you should use a sequence-to-sequence RNN architecture where the output sequence length is 7.
+
+5. Main difficulties when training RNNs:
+   - Vanishing gradients: Long-term dependencies can lead to gradients becoming too small.
+   - Exploding gradients: Gradients can become too large, causing instability during training.
+   - Training instability: RNNs can be sensitive to learning rates and initialization.
+   - Memory consumption: RNNs require storing activations for each timestep, leading to high memory usage.
+   
+   Techniques to handle these difficulties include gradient clipping, using appropriate activation functions like ReLU or LSTM/GRU, using techniques like batch normalization or layer normalization, and using advanced optimization algorithms like Adam.
+
+6. LSTM cell architecture:
+   - The LSTM cell consists of a cell state (long-term memory) and three gates: forget gate, input gate, and output gate.
+   - Each gate consists of a sigmoid activation layer followed by a pointwise multiplication and addition operation.
+   - The cell state is updated based on the forget gate, input gate, and the previous cell state.
+   - The output gate controls the flow of information from the cell state to the output.
+
+7. 1D convolutional layers in an RNN can be used for feature extraction or preprocessing of sequential data, such as time series or text, before feeding it into the RNN layers. They can help capture local patterns and reduce the computational cost of processing long sequences.
+
+8. For classifying videos, a suitable neural network architecture could be a combination of 3D convolutional layers to capture spatial and temporal features, followed by recurrent layers or fully connected layers for classification.
+
+9. To train a classification model for the SketchRNN dataset, you would use TensorFlow Datasets to load the dataset, preprocess the sketches (sequences of pen coordinates), and design an RNN architecture, possibly an LSTM or GRU, followed by a fully connected layer for classification. You would then train the model using appropriate loss functions and optimization algorithms.

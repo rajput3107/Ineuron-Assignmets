@@ -1,0 +1,54 @@
+1. **Machine Learning**: Machine learning is a subset of artificial intelligence (AI) that focuses on the development of algorithms and models that enable computers to learn and improve their performance on a specific task without being explicitly programmed. It involves the use of data to identify patterns, make decisions, and improve the performance of a system over time.
+
+2. **Issues where Machine Learning shines**:
+   - Classification: Sorting data into categories.
+   - Regression: Predicting continuous values.
+   - Clustering: Grouping similar data points together.
+   - Anomaly Detection: Identifying unusual patterns or outliers in data.
+
+3. **Labeled Training Set**: A labeled training set is a dataset used in supervised learning that consists of input data along with corresponding output labels. Each data point in the set is paired with the correct output, providing the algorithm with examples to learn from during training.
+
+4. **Two important supervised tasks**: 
+   - Classification: Predicting the category or class of input data.
+   - Regression: Predicting a continuous value based on input features.
+
+5. **Examples of unsupervised tasks**:
+   - Clustering customer segments based on purchasing behavior.
+   - Dimensionality reduction for data visualization.
+   - Anomaly detection in network traffic.
+   - Topic modeling in text data.
+
+6. To make a robot walk through various unfamiliar terrains, a machine learning model based on Reinforcement Learning, such as Deep Q-Networks (DQN) or Proximal Policy Optimization (PPO), would be appropriate.
+
+7. To divide customers into different groups, you can use clustering algorithms such as K-means clustering or hierarchical clustering.
+
+8. Spam detection is typically considered a supervised learning problem because it involves training a model on labeled data where the labels indicate whether an email is spam or not spam.
+
+9. An online learning system is a machine learning system that can continuously learn from new data as it becomes available, updating the model's parameters incrementally over time.
+
+10. Out-of-core learning refers to the process of training machine learning models on datasets that are too large to fit into the computer's main memory (RAM). In contrast, core learning involves datasets that can fit entirely in memory.
+
+11. A learning algorithm that makes predictions using a similarity measure is typically associated with instance-based learning methods, such as k-nearest neighbors (KNN).
+
+12. A model parameter is a configuration variable that is internal to the model and is learned from the data. A hyperparameter is a configuration that is external to the model and whose value cannot be directly estimated from the data.
+
+13. Model-based learning algorithms look for patterns in the data and attempt to generalize these patterns to make predictions on new data. They often use techniques such as linear regression, decision trees, or neural networks to achieve success.
+
+14. Four important Machine Learning challenges are:
+    - Overfitting
+    - Underfitting
+    - Data scarcity
+    - Interpretability of models
+
+15. If a model performs well on the training data but fails to generalize to new situations, you could consider:
+    - Collecting more diverse or representative data.
+    - Adjusting the model complexity.
+    - Regularizing the model to prevent overfitting.
+
+16. A test set is a separate portion of the dataset that is not used during model training but is reserved to evaluate the model's performance on unseen data. It helps assess how well the model generalizes to new data.
+
+17. The purpose of a validation set is to fine-tune hyperparameters and assess model performance during the training process without contaminating the test set. It helps prevent overfitting and provides insights into how well the model generalizes to unseen data.
+
+18. The train-dev kit, or training-development set, is a subset of the training data used to monitor the model's performance during training. It helps detect issues like overfitting early on and guides the selection of hyperparameters.
+
+19. If you use the test set to tune hyperparameters, you risk overfitting the hyperparameters to the specific characteristics of the test set, which can lead to poor generalization performance on unseen data.

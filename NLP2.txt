@@ -1,0 +1,31 @@
+1. **Corpora:**
+   - Corpora (plural of corpus) refer to large and structured sets of text or linguistic data that are used for linguistic analysis, natural language processing (NLP), and machine learning tasks. Corpora can contain various types of text data, such as documents, articles, books, conversations, and more, collected from different sources and domains.
+
+2. **Tokens:**
+   - Tokens are the basic units of text that are produced after breaking down a larger body of text into smaller components. These components can include words, punctuation marks, numbers, symbols, and other elements. Tokenization is the process of dividing a text into tokens for further analysis and processing.
+
+3. **Unigrams, Bigrams, Trigrams:**
+   - Unigrams: Unigrams are single words or tokens that occur individually in a sequence of text.
+   - Bigrams: Bigrams are pairs of adjacent words or tokens that occur together in a sequence of text.
+   - Trigrams: Trigrams are sequences of three consecutive words or tokens that occur together in a sequence of text.
+
+4. **Generating n-grams from text:**
+   - To generate n-grams from text, you first tokenize the text into individual words or tokens. Then, you slide a window of size n over the sequence of tokens, extracting n consecutive tokens at each step to create n-grams.
+
+5. **Lemmatization:**
+   - Lemmatization is the process of reducing words to their base or dictionary form, known as the lemma. In lemmatization, words are transformed to their root form, considering their morphological variants and grammatical features. This helps in normalizing words and reducing them to a common base form for analysis.
+
+6. **Stemming:**
+   - Stemming is the process of removing suffixes or prefixes from words to extract their root form, known as the stem. Stemming aims to remove inflections and variations to reduce words to their base or root form. However, stemming may not always produce valid words as it applies simple rules to truncate words.
+
+7. **Part-of-speech (POS) tagging:**
+   - Part-of-speech tagging is the process of assigning grammatical categories or tags to individual words or tokens in a sentence. These categories include nouns, verbs, adjectives, adverbs, pronouns, prepositions, conjunctions, and more. POS tagging helps in analyzing the syntactic structure and grammatical relationships within text.
+
+8. **Chunking or shallow parsing:**
+   - Chunking, also known as shallow parsing, is the process of grouping and labeling words or tokens into syntactically related chunks or phrases based on their POS tags. Chunking identifies and extracts meaningful phrases such as noun phrases, verb phrases, and prepositional phrases from text.
+
+9. **Noun Phrase (NP) chunking:**
+   - Noun Phrase (NP) chunking is a specific type of chunking that focuses on identifying and extracting noun phrases from text. Noun phrases consist of a noun and other associated words such as determiners, adjectives, and prepositional phrases that modify the noun.
+
+10. **Named Entity Recognition (NER):**
+    - Named Entity Recognition is the process of identifying and classifying named entities or specific mentions of real-world objects, such as persons, organizations, locations, dates, quantities, and more, within text data. NER helps in extracting and categorizing important entities for information retrieval, text mining, and other NLP tasks.

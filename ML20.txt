@@ -1,0 +1,23 @@
+1. The underlying concept of Support Vector Machines (SVMs) is to find the optimal hyperplane that separates data points of different classes while maximizing the margin between classes. SVMs aim to find the decision boundary that best separates the data points into distinct classes.
+
+2. A support vector is a data point that lies closest to the decision boundary or the margin. These are the critical data points that influence the position and orientation of the separating hyperplane in SVM.
+
+3. Scaling the inputs is necessary when using SVMs because SVMs are sensitive to the scale of the input features. Features with larger scales may dominate those with smaller scales, leading to biased results. Scaling ensures that all features contribute equally to the model's decision-making process.
+
+4. Yes, an SVM classifier can output a confidence score for its predictions. However, this score does not represent a percentage chance or probability. Instead, it indicates the distance of the data point from the decision boundary. The farther the data point from the boundary, the higher the confidence score.
+
+5. For training a model on a dataset with millions of instances and hundreds of features, it is generally more efficient to use the primal form of the SVM problem. The primal form directly optimizes the coefficients of the hyperplane, making it computationally more efficient for large datasets.
+
+6. If an SVM classifier with an RBF kernel underfits the training data, it is better to increase the value of the hyperparameter gamma and/or the parameter C. Increasing gamma makes the model more sensitive to individual data points, while increasing C allows for a wider margin and more tolerance for misclassified points.
+
+7. To solve the soft margin linear SVM classifier problem with an off-the-shelf QP (Quadratic Programming) solver, the QP parameters (H, f, A, and b) should be set as follows:
+   - H: A positive semi-definite matrix representing the quadratic coefficients.
+   - f: A vector representing the linear coefficients.
+   - A: The matrix representing the linear equality constraints.
+   - b: The vector representing the right-hand side of the linear equality constraints.
+
+8. To train models like LinearSVC, SVC, and SGDClassifier on a linearly separable dataset, you can achieve similar models by adjusting the hyperparameters such as the regularization parameter C. For LinearSVC and SVC, you can set the C parameter to control the regularization strength. For SGDClassifier, you can adjust the alpha parameter.
+
+9. On the MNIST dataset, an SVM classifier can achieve a high level of precision by properly tuning the hyperparameters using small validation sets. By implementing one-versus-the-rest strategy for multi-class classification, SVM classifiers can effectively classify all 10 digits in the MNIST dataset with high accuracy.
+
+10. On the California housing dataset, you can train an SVM regressor to predict the housing prices. By properly tuning the hyperparameters such as the kernel type, regularization parameter C, and epsilon parameter for epsilon-SVR, you can build an SVM regressor that accurately predicts housing prices based on the input features.

@@ -1,0 +1,112 @@
+1. **Python code to implement a single neuron:**
+```python
+import numpy as np
+
+class Neuron:
+    def __init__(self, num_inputs):
+        self.weights = np.random.rand(num_inputs)
+        self.bias = np.random.rand()
+
+    def forward(self, inputs):
+        return np.dot(inputs, self.weights) + self.bias
+
+# Example usage:
+neuron = Neuron(3)
+inputs = np.array([0.5, 0.3, 0.2])
+output = neuron.forward(inputs)
+print("Output of the neuron:", output)
+```
+
+2. **Python code to implement ReLU:**
+```python
+import numpy as np
+
+def relu(x):
+    return np.maximum(0, x)
+
+# Example usage:
+x = np.array([-1, 2, -3, 4, -5])
+print("ReLU output:", relu(x))
+```
+
+3. **Python code for a dense layer in terms of matrix multiplication (using PyTorch):**
+```python
+import torch
+
+# Assuming input_size and output_size are the dimensions of input and output layers
+# weights and biases are initialized randomly
+input_size = 5
+output_size = 3
+
+weights = torch.randn(output_size, input_size)
+biases = torch.randn(output_size)
+
+# Assuming inputs is the input tensor
+outputs = torch.matmul(weights, inputs) + biases
+```
+
+4. **Python code for a dense layer in plain Python:**
+```python
+# Assuming inputs is a list of input values
+# weights is a list of weight values
+# biases is a list of bias values
+# Each neuron in the layer has its own set of weights and biases
+
+def dense_layer(inputs, weights, biases):
+    outputs = [sum(w * x for w, x in zip(weights[i], inputs)) + biases[i] for i in range(len(weights))]
+    return outputs
+
+# Example usage:
+inputs = [1, 2, 3]
+weights = [[0.1, 0.2, 0.3], [0.4, 0.5, 0.6]]
+biases = [0.7, 0.8]
+print("Output of dense layer:", dense_layer(inputs, weights, biases))
+```
+
+5. **"Hidden size" of a layer:**
+   - The "hidden size" refers to the number of neurons or units in a hidden layer of a neural network. It determines the dimensionality of the output space of that layer.
+
+6. **The `t` method in PyTorch:**
+   - In PyTorch, the `t` method is used to transpose a tensor, exchanging its rows and columns.
+
+7. **Why is matrix multiplication written in plain Python very slow?**
+   - Matrix multiplication written in plain Python is slow because it involves looping through elements explicitly, which is not optimized for performance. The operation is more efficiently performed using optimized libraries like NumPy or TensorFlow, which utilize optimized C/C++ or CUDA code under the hood.
+
+8. **In `matmul`, why is `ac==br`?**
+   - In matrix multiplication `matmul`, the number of columns in the first matrix (`a`) must be equal to the number of rows in the second matrix (`b`) for the operation to be valid and result in a matrix of shape `(a_rows, b_columns)`.
+
+9. **Measuring time taken for a single cell to execute in Jupyter Notebook:**
+   - You can measure the time taken for a single cell to execute in Jupyter Notebook by using the `%time` or `%%time` magic command at the beginning of the cell.
+
+10. **What is elementwise arithmetic?**
+    - Elementwise arithmetic refers to performing arithmetic operations (addition, subtraction, multiplication, division, etc.) on corresponding elements of two arrays or tensors of the same shape.
+
+11. **PyTorch code to test whether every element of `a` is greater than the corresponding element of `b`:**
+```python
+import torch
+
+a = torch.tensor([1, 2, 3])
+b = torch.tensor([0, 2, 2])
+
+result = torch.all(a > b)
+print("Are all elements of 'a' greater than corresponding elements of 'b'?", result)
+```
+
+12. **A rank-0 tensor and conversion to a plain Python data type:**
+    - A rank-0 tensor is a tensor with no dimensions, effectively representing a single scalar value. You can convert it to a plain Python data type using the `.item()` method.
+
+13. **How does elementwise arithmetic help speed up `matmul`?**
+    - Elementwise arithmetic helps speed up `matmul` by utilizing optimized implementations provided by underlying libraries like NumPy or PyTorch. These libraries are typically optimized to perform elementwise operations efficiently using parallel processing and optimized low-level implementations.
+
+14. **Broadcasting rules:**
+    - Broadcasting rules are rules that define how arrays of different shapes are treated during arithmetic operations. Arrays with smaller dimensions are "broadcast" across the larger dimensions to match their shapes for the operation.
+
+15. **`expand_as` method in PyTorch:**
+    - The `expand_as` method in PyTorch is used to expand the dimensions of a tensor to match the dimensions of another tensor. It returns a new tensor with expanded dimensions. For example:
+    ```python
+    import torch
+
+    a = torch.randn(3, 1)
+    b = torch.randn(3, 4)
+    expanded_a = a.expand_as(b)
+    ```

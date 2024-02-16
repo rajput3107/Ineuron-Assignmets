@@ -1,0 +1,67 @@
+1. **Bayesian Interpretation of Probability:**
+   - In the Bayesian interpretation, probability represents a measure of belief or confidence in the occurrence of an event, based on available evidence or prior knowledge.
+   - It is updated as new evidence or data becomes available using Bayes' theorem.
+
+2. **Probability of the Union of Two Events:**
+   - The probability of the union of two events \( A \) and \( B \) is given by:
+   \[ P(A \cup B) = P(A) + P(B) - P(A \cap B) \]
+
+3. **Joint Probability:**
+   - Joint probability refers to the probability of the occurrence of two or more events simultaneously.
+   - The formula for joint probability of events \( A \) and \( B \) is denoted as \( P(A \cap B) \).
+
+4. **Chain Rule of Probability:**
+   - The chain rule of probability states that the joint probability of \( n \) events can be expressed as the product of conditional probabilities:
+   \[ P(A_1 \cap A_2 \cap \ldots \cap A_n) = P(A_1) \times P(A_2|A_1) \times P(A_3|A_1 \cap A_2) \times \ldots \times P(A_n|A_1 \cap A_2 \cap \ldots \cap A_{n-1}) \]
+
+5. **Conditional Probability:**
+   - Conditional probability is the probability of an event occurring given that another event has already occurred.
+   - The formula for conditional probability is:
+   \[ P(A|B) = \frac{P(A \cap B)}{P(B)} \]
+
+6. **Continuous Random Variables:**
+   - Continuous random variables can take any value within a specified range.
+   - They are typically associated with measurements or quantities that are not countable.
+   - Examples include height, weight, temperature, and time.
+
+7. **Bernoulli Distribution:**
+   - Bernoulli distribution models a single experiment with two possible outcomes: success (usually denoted as 1) or failure (usually denoted as 0).
+   - The probability mass function (PMF) of a Bernoulli distribution is given by:
+   \[ P(X = x) = p^x \times (1 - p)^{1-x} \]
+   where \( p \) is the probability of success.
+
+8. **Binomial Distribution:**
+   - Binomial distribution models the number of successes in a fixed number of independent Bernoulli trials.
+   - The probability mass function (PMF) of a binomial distribution is given by:
+   \[ P(X = k) = \binom{n}{k} \times p^k \times (1 - p)^{n-k} \]
+   where \( n \) is the number of trials, \( k \) is the number of successes, and \( p \) is the probability of success.
+
+9. **Poisson Distribution:**
+   - Poisson distribution models the number of events occurring in a fixed interval of time or space, given that these events occur with a known constant rate and are independent of the time since the last event.
+   - The probability mass function (PMF) of a Poisson distribution is given by:
+   \[ P(X = k) = \frac{e^{-\lambda} \times \lambda^k}{k!} \]
+   where \( \lambda \) is the average rate of occurrence.
+
+10. **Covariance:**
+    - Covariance measures the degree to which two random variables change together.
+    - It indicates the direction of the linear relationship between variables.
+    - The formula for covariance between two random variables \( X \) and \( Y \) is:
+    \[ \text{Cov}(X, Y) = E[(X - \mu_X)(Y - \mu_Y)] \]
+
+11. **Correlation:**
+    - Correlation measures the strength and direction of the linear relationship between two variables.
+    - It is a standardized measure, ranging from -1 to 1.
+    - The formula for correlation between two random variables \( X \) and \( Y \) is:
+    \[ \rho_{X,Y} = \frac{\text{Cov}(X, Y)}{\sigma_X \times \sigma_Y} \]
+
+12. **Sampling with Replacement:**
+    - Sampling with replacement involves selecting items from a population one at a time, where each selection is independent of the others, and the selected item is returned to the population before the next selection.
+    - Example: Drawing cards from a deck and returning each card before drawing the next one.
+
+13. **Sampling without Replacement:**
+    - Sampling without replacement involves selecting items from a population one at a time, where each selection affects the composition of the population for subsequent selections.
+    - Example: Drawing balls from an urn without returning them after each selection.
+
+14. **Hypothesis:**
+    - A hypothesis is a statement or proposition that is presumed to be true and is subject to testing and verification.
+    - Example: "The mean height of adults in a population is 170 cm."

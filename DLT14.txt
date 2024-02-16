@@ -1,0 +1,25 @@
+1. Initializing all weights to the same value, even if using He initialization, may not be optimal. He initialization helps in addressing the vanishing or exploding gradients problem by initializing weights with values scaled based on the number of input units. However, initializing all weights to the same value might lead to symmetry breaking issues, where all neurons in a layer behave similarly, and the network fails to learn diverse features.
+
+2. It is generally okay to initialize bias terms to 0, especially when using techniques like batch normalization. Bias terms help in shifting the activation function to the left or right, and initializing them to 0 initially allows the network to learn appropriate biases during training.
+
+3. Three advantages of the ELU (Exponential Linear Unit) activation function over ReLU (Rectified Linear Unit) are:
+   - ELU can handle negative inputs gracefully, unlike ReLU, which can cause dead neurons.
+   - ELU has a nonzero gradient for negative inputs, which can help with gradient flow during training.
+   - ELU has a smoother transition around zero, which can help in optimization and convergence.
+
+4. Use cases for each activation function:
+   - ELU: Use when you want a smooth activation function that handles negative inputs gracefully and has a nonzero gradient for negative inputs.
+   - Leaky ReLU (and variants): Use when you want to mitigate the dying ReLU problem by allowing a small gradient for negative inputs.
+   - ReLU: Use as a default activation function in hidden layers, especially in deeper networks.
+   - Tanh: Use when you need outputs between -1 and 1, suitable for centered data.
+   - Logistic (Sigmoid): Use in binary classification problems, where you need outputs between 0 and 1.
+   - Softmax: Use in the output layer of multi-class classification problems to get probability distributions over classes.
+
+5. Setting the momentum hyperparameter too close to 1 (e.g., 0.99999) in a MomentumOptimizer can lead to the optimizer's behavior being dominated by past gradients. This can result in slow convergence and potential oscillations around the minima, making the optimization process less stable.
+
+6. Three ways to produce a sparse model:
+   - L1 Regularization: Encourages sparsity by penalizing the absolute values of weights during training.
+   - Dropout: Randomly sets a fraction of the input units to zero during training, which can lead to a sparse representation.
+   - Pruning: Identifies and removes connections or weights that contribute less to the model's performance, resulting in a sparser network structure.
+
+7. Dropout can slow down training because it introduces randomness and effectively reduces the capacity of the network during training. However, it usually does not significantly slow down inference because dropout is typically turned off or scaled during inference, allowing all neurons to contribute to predictions.
